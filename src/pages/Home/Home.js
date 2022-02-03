@@ -1,4 +1,4 @@
-import Alert from '../../components/Alert/Alert';
+import { Alert } from '../../components/Alert';
 
 const Home = () => {
   return (
