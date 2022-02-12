@@ -1,8 +1,12 @@
 import { Alert } from '../../components/Alert';
+import { Carousel } from '../../components/Carousel';
 
 const Home = () => {
   return (
-    <Alert />
+    <>
+      <Carousel />
+      <Alert />
+    </>
   );
 };
 
