@@ -1,10 +1,8 @@
 import React from 'react';
-import './carousel.css';
 import Img1 from './images/imag-1.png';
 
 const Carousel = () => {
   return (
-    <div>
       <div id="carousel-controls" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
           <div className="carousel-item active">
@@ -20,7 +18,6 @@ const Carousel = () => {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-    </div>
   );
 };
 
