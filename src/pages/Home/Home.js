@@ -1,11 +1,11 @@
 import { Alert } from '../../components/Alert';
-import { Button } from '../../components/Button';
+import { Navbar } from '../../components/Navbar';
 
 const Home = () => {
   return (
     <>
-      <Alert />
-      <Button />
+    <Navbar />
+    <Alert />
     </>
   );
 };
