@@ -1,5 +1,4 @@
 import React from 'react';
-import './contact.css';
 
 function Contact() {
   return (
@@ -22,25 +21,25 @@ function Contact() {
       <div className='col-xl-5 col-lg-12'>
         <h2>FORMULARIO DE CONTACTO</h2>
         <div className="mb-3">
-          <label htmlFor="exampleFormControlInput1" className="form-label">Nombre</label>
-          <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Ingrese su nombre completo" />
+          <label htmlFor="fullName" className="form-label">Nombre Completo</label>
+          <input type="text" className="form-control" id="fullName" placeholder="Ingrese su nombre completo" />
         </div>
         <div className="mb-3">
-          <label htmlFor="exampleFormControlInput1" className="form-label">Correo Electrónico</label>
-          <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="Ingrese su correo electrónico" />
+          <label htmlFor="email" className="form-label">Correo Electrónico</label>
+          <input type="email" className="form-control" id="email" placeholder="Ingrese su correo electrónico" />
         </div>
         <div className="mb-3">
-          <label htmlFor="exampleFormControlInput1" className="form-label">Asunto</label>
-          <select className="form-select" aria-label="Default select example">
-            <option selected>Seleccione el motivo de su consulta</option>
+          <label htmlFor="matter" className="form-label">Asunto</label>
+          <select className="form-select" aria-label="Default select example" defaultValue={'default'}>
+            <option value="default" disabled>Seleccione el motivo de su consulta</option>
             <option value="1">Presupuesto</option>
             <option value="2">No tengo seguro</option>
             <option value="3">Otras</option>
           </select>
         </div>
         <div className="mb-3">
-          <label htmlFor="exampleFormControlTextarea1" className="form-label">Consulta</label>
-          <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder='Ingrese su consulta'></textarea>
+          <label htmlFor="consult" className="form-label">Consulta</label>
+          <textarea className="form-control" id="consult" rows="3" placeholder='Ingrese su consulta'></textarea>
         </div>
         <button type="button" className="btn btn-success">Enviar</button>
       </div>
