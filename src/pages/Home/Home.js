@@ -1,6 +1,5 @@
-import { Alert } from '../../components/Alert';
-import { Contact } from '../../components/Contact';
 import { Navbar } from '../../components/Navbar';
+import { Contact } from '../../components/Contact';
 import { Carousel } from '../../components/Carousel';
 
 const Home = () => {
@@ -9,7 +8,6 @@ const Home = () => {
       <Navbar />
       <Contact />
       <Carousel />
-      <Alert />
     </>
   );
 };
