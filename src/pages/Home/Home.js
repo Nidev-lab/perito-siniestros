@@ -1,13 +1,14 @@
-import { Alert } from '../../components/Alert';
 import { Navbar } from '../../components/Navbar';
-import { Footer } from '../../components/Footer';
-
+import { Contact } from '../../components/Contact';
+import { Carousel } from '../../components/Carousel';
+import { Footer } from '../../components/Footer'
 const Home = () => {
   return (
     <>
-    <Navbar />
-    <Alert />
-    <Footer />
+      <Navbar />
+      <Contact />
+      <Carousel />
+      <Footer />
     </>
   );
 };
