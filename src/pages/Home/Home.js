@@ -1,8 +1,8 @@
-import { Alert } from '../../components/Alert';
-import { Contact } from '../../components/Contact';
 import { Navbar } from '../../components/Navbar';
+import { Contact } from '../../components/Contact';
 import { Carousel } from '../../components/Carousel';
 import { Budget } from '../../components/Budget';
+import { Footer } from '../../components/Footer'
 
 const Home = () => {
   return (
@@ -12,6 +12,7 @@ const Home = () => {
       <Budget />
       <Contact />
       <Alert />
+      <Footer />
     </>
   );
 };
