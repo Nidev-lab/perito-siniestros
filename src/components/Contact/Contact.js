@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Contact() {
+const Contact = () => {
   return (
     <div className='d-flex justify-content-evenly row m-0'>
       <div className='col-xl-5 col-lg-12'>

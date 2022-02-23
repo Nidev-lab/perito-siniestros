@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ManageSinister() {
+const ManageSinister = () => {
   return (
     <div>
       <div className='d-flex justify-content-evenly row m-0'>
