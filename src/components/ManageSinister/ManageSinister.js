@@ -48,6 +48,6 @@ const ManageSinister = () => {
       </div>
     </div>
   );
-}
+};
 
 export default ManageSinister;
