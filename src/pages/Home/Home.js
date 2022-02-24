@@ -1,17 +1,18 @@
 import { Navbar } from '../../components/Navbar';
-import { Contact } from '../../components/Contact';
 import { Carousel } from '../../components/Carousel';
+import { ManageSinister } from '../../components/ManageSinister';
 import { Budget } from '../../components/Budget';
-import { Footer } from '../../components/Footer'
+import { Contact } from '../../components/Contact';
+import { Footer } from '../../components/Footer';
 
 const Home = () => {
   return (
     <>
       <Navbar />
       <Carousel />
+      <ManageSinister />
       <Budget />
       <Contact />
-      <Alert />
       <Footer />
     </>
   );
