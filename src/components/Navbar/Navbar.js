@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Navbar() {
+const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid navbar-logo col-lg-6">
@@ -21,6 +21,6 @@ function Navbar() {
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;
