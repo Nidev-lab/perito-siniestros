@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div className='d-flex justify-content-evenly row m-0'>
+    <div className='d-flex justify-content-evenly row m-0 pt-4'>
       <div className='col-xl-5 col-lg-12'>
         <h2>DATOS DE CONTACTO</h2>
         <div className="card">
