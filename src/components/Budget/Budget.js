@@ -1,6 +1,6 @@
 import React from 'react';
 import './budget.css';
-import Img1 from './images/logo.jpeg';
+import logo from './images/logo.jpeg';
 
 const Budget = () => {
   return (
@@ -8,7 +8,7 @@ const Budget = () => {
         <h2>Presupuesto</h2>
         <div className="d-flex justify-content-center mt-3 p-5">
           <div>
-            <img src={Img1} className='rounded mx-auto d-block w-50 imagen' />
+            <img src={logo} className='rounded mx-auto d-block w-50 imagen' />
           </div>
           <div>
             <h5 className='fw-bold'>¿No tenés seguro?</h5>
@@ -19,9 +19,7 @@ const Budget = () => {
         </div>
         <div className='d-flex flex-column'>
           <div className="m-3">
-            <div>
-              <h5>Condiciones</h5>
-            </div>
+            <h5>Condiciones</h5>
             <div>
               <span className='fw-normal'>Para que podamos reparar tu vehículo el tercero (quien te chocó), tiene que cumplir con lo siguiente:</span>
               <ul>
@@ -33,9 +31,7 @@ const Budget = () => {
           </div>
           <div className="d-flex m-3">
             <div>
-              <div>
-                <h5>Documentacion necesaria:</h5>
-              </div>
+              <h5>Documentacion necesaria:</h5>
               <div>
                 <ul>
                   <li>Copia de Cédula Verde y Registro de conducir.</li>
@@ -47,7 +43,7 @@ const Budget = () => {
               </div>
             </div>
             <div>
-              <input type="button" value="Solicitar asesoramiento" className="btn btn-secondary btnAdvice"/>
+              <input type="button" value="Solicitar asesoramiento" className="btn btn-secondary btn-advice"/>
             </div>
           </div>
         </div>
