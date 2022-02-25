@@ -9,9 +9,9 @@ const Home = () => {
     <>
       <Navbar />
       <Carousel />
+      <ManageSinister />
       <Contact />
       <Footer />
-      <ManageSinister />
     </>
   );
 };

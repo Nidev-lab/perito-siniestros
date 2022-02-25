@@ -3,7 +3,7 @@ import './footer.css';
 
 const Footer = () => {
   return (
-    <footer className='container-fluid h-100 bg-secondary'>
+    <footer className='container-fluid h-100 bg-secondary mt-4'>
       <div className='text-center pt-2'>
         <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos </p>
       </div>

@@ -2,8 +2,8 @@ import React from 'react';
 
 const ManageSinister = () => {
   return (
-    <div>
-      <div className='d-flex justify-content-evenly row m-0'>
+    <div className='pt-4'>
+      <div className='d-flex justify-content-evenly row me-0 ms-0'>
         <div className='col-xl-6'>
           <h1 className='text-center'>IMAGEN</h1>
         </div>
