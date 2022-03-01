@@ -6,8 +6,8 @@ const Budget = () => {
   return (
       <div className='container d-flex flex-column'>
         <h2>Presupuesto</h2>
-        <div className="d-flex justify-content-center mt-3 p-5">
-          <div>
+        <div className="d-flex justify-content-center">
+          <div className="col-2">
             <img src={logo} className='rounded mx-auto d-block w-50 imagen' />
           </div>
           <div>
@@ -29,7 +29,7 @@ const Budget = () => {
               </ul>
             </div>
           </div>
-          <div className="d-flex m-3">
+          <div className="d-flex flex-wrap m-3">
             <div>
               <h5>Documentacion necesaria:</h5>
               <div>
@@ -42,8 +42,8 @@ const Budget = () => {
                 </ul>
               </div>
             </div>
-            <div>
-              <input type="button" value="Solicitar asesoramiento" className="btn btn-secondary btn-advice"/>
+            <div className="col-12 d-flex justify-content-end">
+              <input type="button" value="Solicitar asesoramiento" className="btn btn-success btn-advice"/>
             </div>
           </div>
         </div>
