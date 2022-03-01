@@ -1,5 +1,4 @@
 import React from 'react';
-import './budget.css';
 import logo from './images/logo.jpeg';
 
 const Budget = () => {
@@ -8,7 +7,7 @@ const Budget = () => {
         <h2>Presupuesto</h2>
         <div className="d-flex justify-content-center">
           <div className="col-2">
-            <img src={logo} className='rounded mx-auto d-block w-50 imagen' />
+            <img src={logo} className='rounded mx-auto d-block w-50' />
           </div>
           <div>
             <h5 className='fw-bold'>¿No tenés seguro?</h5>
@@ -43,7 +42,7 @@ const Budget = () => {
               </div>
             </div>
             <div className="col-12 d-flex justify-content-end">
-              <input type="button" value="Solicitar asesoramiento" className="btn btn-success btn-advice"/>
+              <input type="button" value="Solicitar asesoramiento" className="btn btn-success"/>
             </div>
           </div>
         </div>
