@@ -1,9 +1,10 @@
 import { Navbar } from '../../components/Navbar';
-import { Contact } from '../../components/Contact';
 import { Carousel } from '../../components/Carousel';
-import { Footer } from '../../components/Footer';
 import { ManageSinister } from '../../components/ManageSinister';
 import { FreeRepair } from '../../components/FreeRepair';
+import { Budget } from '../../components/Budget';
+import { Contact } from '../../components/Contact';
+import { Footer } from '../../components/Footer';
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Carousel />
       <ManageSinister />
       <FreeRepair />
+      <Budget />
       <Contact />
       <Footer />
     </>
