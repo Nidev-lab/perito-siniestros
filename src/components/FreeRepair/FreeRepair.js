@@ -2,7 +2,7 @@ import React from 'react';
 
 const FreeRepair = () => {
   return (
-    <div>
+    <>
       <h3 className='container mt-4'>Deseo Reparar mi auto sin costo</h3>
       <div className='d-flex justify-content-center aling-center'>
         <div className='d-flex flex-column w-75'>
@@ -52,7 +52,7 @@ const FreeRepair = () => {
         <p className='text-center mt-4'>¿Sabías que podés vender tu auto chocado?</p>
         <button className='btn btn-success w-50 mb-5' type="button">Click aquí para mas info</button>
       </div>
-    </div>
+    </>
   );
 };
 
