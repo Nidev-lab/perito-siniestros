@@ -22,7 +22,7 @@ const Footer = () => {
               instagram
             </div>
             <div className='my-3'>
-              Linkedin
+              Whatsapp
             </div>
           </div>
          </div>
