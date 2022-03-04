@@ -2,7 +2,7 @@ import React from 'react';
 
 const ManageSinister = () => {
   return (
-    <div className='pt-4 container'>
+    <div className='pt-4 container' id="siniestro">
       <div className='d-flex justify-content-between row me-0 ms-0'>
         <div className='col-xl-6 d-flex align-items-center justify-content-center'>
           <h1>IMAGEN</h1>

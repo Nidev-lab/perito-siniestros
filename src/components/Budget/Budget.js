@@ -3,7 +3,7 @@ import logo from './images/logo.jpeg';
 
 const Budget = () => {
   return (
-      <div className='container d-flex flex-column'>
+      <div className='container d-flex flex-column' id="presupuesto">
         <h2>Presupuesto</h2>
         <div className="d-flex justify-content-center">
           <div className="col-2">

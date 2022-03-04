@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div className='container'>
+    <div className='container' id='contacto'>
       <div className='d-flex justify-content-between row m-0 pt-4'>
         <div className='col-xl-5 col-lg-12 p-0'>
           <h2 className='mb-4'>DATOS DE CONTACTO</h2>

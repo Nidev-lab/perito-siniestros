@@ -2,7 +2,7 @@ import React from 'react';
 
 const FreeRepair = () => {
   return (
-    <div>
+    <div id="reparacion">
       <h1>Repará tu auto sin costo</h1>
       <div className='d-flex justify-content-center aling-center'>
         <div className='d-flex flex-column w-75'>
