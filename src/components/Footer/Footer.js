@@ -16,13 +16,13 @@ const Footer = () => {
           <h3 className='text-center'>Redes Sociales</h3>
           <div className='d-flex'>
             <div className='my-3'>
-              Facebook
+              Facebook.
             </div>
             <div className='my-3 mx-3'>
-              instagram
+              instagram.
             </div>
             <div className='my-3'>
-              Whatsapp
+              Whatsapp.
             </div>
           </div>
          </div>
