@@ -8,8 +8,6 @@ const Contact = () => {
           <h2 className='mb-4'>DATOS DE CONTACTO</h2>
           <div className="card">
             <ul className="list-group list-group-flush p-2">
-              <li className="list-group-item">Dirección: </li>
-              <li className="list-group-item">Teléfono: (+54) 381 6974855</li>
               <li className="list-group-item">Correo electrónico: <a href="/#">perito.agomez@gmail.com</a></li>
             </ul>
             <span className='d-flex justify-content-center p-3'>Redes Sociales</span>
@@ -28,6 +26,16 @@ const Contact = () => {
           <div className="mb-3">
             <label htmlFor="email" className="form-label">Correo Electrónico</label>
             <input type="email" className="form-control" id="email" placeholder="Ingrese su correo electrónico" />
+          </div>
+          <div className='row justify-content-between'>
+            <div className='col-lg-6'>
+              <label htmlFor="tel" className="form-label">Teléfono</label>
+              <input type="tel" className="form-control" id="tel" placeholder="Ingrese su número de teléfono" />
+            </div>
+            <div className='col-lg-4'>
+              <label htmlFor="time" className="form-label">Horario de contacto</label>
+              <input type="time" className="form-control" id="time" placeholder="Ingrese su número de teléfono" />
+            </div>
           </div>
           <div className="mb-3">
             <label htmlFor="matter" className="form-label">Asunto</label>
