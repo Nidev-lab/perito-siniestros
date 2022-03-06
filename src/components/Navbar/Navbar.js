@@ -16,7 +16,6 @@ const Navbar = () => {
             <li className="nav-item p-2"><a className="nav-link text-center" aria-current="page" href="/#inicio">Inicio</a></li>
             <li className="nav-item p-2"><a className="nav-link text-center" aria-current="page" href="/#siniestro">Gestionamos tu siniestro</a></li>
             <li className="nav-item p-2"><a className="nav-link text-center" aria-current="page" href="/#reparacion">Reparación sin costo</a></li>
-            <li className="nav-item p-2"><a className="nav-link text-center" aria-current="page" href="/#">Presupuesto</a></li>
             <li className="nav-item p-2"><a className="nav-link text-center" aria-current="page" href="/#contacto">Contacto</a></li>
           </ul>
         </div>
