@@ -30,6 +30,7 @@ const FreeRepair = () => {
           <p>Te brindamos el mejor asesoramiento!. Contamos con presupuesto originales con
             firma responsable de un taller registrado brindando siempre valores actualizados
             en el mercado.</p>
+          <a href="/#contacto" className="btn btn-primary w-50 my-4" role="button" aria-disabled="true">Solicitá tu presupuesto haciendo click aquí</a>
         </div>
       </div>
       <div className='my-4'>
