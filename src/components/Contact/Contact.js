@@ -3,21 +3,21 @@ import React from 'react';
 const Contact = () => {
   return (
     <div className='container'>
-      <div className='d-flex justify-content-between row m-0 pt-4'>
-        <div className='col-xl-5 col-lg-12 p-0'>
+      <div className='row justify-content-between pt-4'>
+        <div className='col-xl-5 col-12 mb-4'>
           <h2 className='mb-4'>DATOS DE CONTACTO</h2>
           <div className="card">
             <ul className="list-group list-group-flush p-2">
               <li className="list-group-item">Correo electrónico: <a href="/#">perito.agomez@gmail.com</a></li>
             </ul>
-            <span className='d-flex justify-content-center p-3'>Redes Sociales</span>
+            <span className='text-center p-3'>Redes Sociales</span>
             <div className="card-body d-flex justify-content-evenly">
               <a href="/#" className="card-link text-decoration-none text-dark">Facebook</a>
               <a href="/#" className="card-link text-decoration-none text-dark">Instagram</a>
             </div>
           </div>
         </div>
-        <div className='col-xl-5 col-lg-12 p-0'>
+        <div className='col-xl-5 col-12'>
           <h2 className='mb-4'>FORMULARIO DE CONTACTO</h2>
           <div className="mb-3">
             <label htmlFor="fullName" className="form-label">Nombre Completo</label>
@@ -28,11 +28,11 @@ const Contact = () => {
             <input type="email" className="form-control" id="email" placeholder="Ingrese su correo electrónico" />
           </div>
           <div className='row justify-content-between'>
-            <div className='col-lg-6'>
+            <div className='col-lg-6 mb-3'>
               <label htmlFor="tel" className="form-label">Teléfono</label>
               <input type="tel" className="form-control" id="tel" placeholder="Ingrese su número de teléfono" />
             </div>
-            <div className='col-lg-4'>
+            <div className='col-lg-4 mb-3'>
               <label htmlFor="time" className="form-label">Horario de contacto</label>
               <input type="time" className="form-control" id="time" placeholder="Ingrese su número de teléfono" />
             </div>
