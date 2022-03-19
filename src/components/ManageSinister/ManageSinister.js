@@ -1,55 +1,77 @@
 import React from 'react';
+import { Navbar } from '../Navbar';
 
 const ManageSinister = () => {
   return (
-    <div className='pt-4 container' id="siniestro">
-      <div className='d-flex justify-content-between row'>
-        <h3>Deseo Gestionar mi Siniestro </h3>
-        <div className='col-xl-6 d-flex align-items-center justify-content-center'>
-          <h1 className='my-5'>IMAGEN</h1>
+    <>
+    <Navbar />
+    <div align='center' id="siniestro">
+      <form className="col-10 m-4 row g-3 needs-validation" noValidate>
+        <div className="col-md-4">
+          <label htmlFor="validationCustom01" className="form-label">First name</label>
+          <input type="text" className="form-control" id="validationCustom01" value="Mark" bienrequired />
+          <div className="valid-feedback">
+            Looks good!
+          </div>
         </div>
-        <section className='col-xl-6'>
-          <p>Un accidente de auto es siempre una experiencia difícil.
-           A veces, el miedo y el estrés nos impiden reaccionar adecuadamente.
-           Por ese motivo, es muy importante saber de antemano qué pasos debemos seguir si pasamos
-           por una situación así. Si hacemos lo adecuado, va a ser mucho más fácil resolver
-           la situación</p>
-          <p>En primer lugar, tomate unos segundos para recuperar la calma.
-           Comprobá que los pasajeros de tu auto estén sanos y salvos.
-           Si todos se encuentran bien, seguí estos pasos:</p>
-          <p>Detené el auto, apagá el motor y encendé las balizas.
-           Tené en cuenta que abandonar el lugar es un delito</p>
-          <p>Si alguna persona se lastimó, ya sea en tu auto como en algún otro involucrado,
-            llamá de inmediato al servicio de emergencias médicas (107),
-            y comunicate también con la policía (911) y los bomberos (100).</p>
-          <p>Realizá la denuncia del siniestro en tu seguro.</p>
-        </section>
-      </div>
-      <section className='mt-4'>
-        <h5 className='col-xl-6'>Solicitá los datos del tercero</h5>
-        <ul>
-          <li>Patente del vehículo del tercero.</li>
-          <li>Compañía de seguro del vehículo del tercero y número de póliza.</li>
-          <li>Marca y modelo del vehículo del tercero.</li>
-          <li>Nombre y apellido del titular del vehículo.</li>
-          <li>Nombre y apellido del conductor del vehículo.</li>
-          <li>Datos de contacto del tercero: teléfono, celular y domicilio.</li>
-        </ul>
-      </section>
-      <section className='my-4'>
-        <h5 className='col-xl-6'>Registrá los datos generales</h5>
-        <ul>
-          <li>Fecha y hora del siniestro.</li>
-          <li>Lugar del siniestro.</li>
-          <li>Tomá fotos de los daños de tu auto.</li>
-          <li>Tomá fotos del lugar del siniestro
-          (si es posible que se vean ambos vehículos en la misma toma).</li>
-        </ul>
-        <div className='col-12 col-md-6 my-5'>
-          <button className='btn btn-success w-100' type="button">Solicitar asesoramiento</button>
+        <div className="col-md-4">
+          <label htmlFor="validationCustom02" className="form-label">Last name</label>
+          <input type="text" className="form-control" id="validationCustom02" value="Otto" required />
+          <div className="valid-feedback">
+            Looks good!
+          </div>
         </div>
-      </section>
+        <div className="col-md-4">
+          <label htmlFor="validationCustomUsername" className="form-label">Username</label>
+          <div className="input-group has-validation">
+            <span className="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" className="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required />
+            <div className="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+        <div className="col-md-6">
+          <label htmlFor="validationCustom03" className="form-label">City</label>
+          <input type="text" className="form-control" id="validationCustom03" required />
+          <div className="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        </div>
+        <div className="col-md-3">
+          <label htmlFor="validationCustom04" className="form-label">State</label>
+          <select className="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Choose...</option>
+            <option>...</option>
+          </select>
+          <div className="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
+        <div className="col-md-3">
+          <label htmlFor="validationCustom05" className="form-label">Zip</label>
+          <input type="text" className="form-control" id="validationCustom05" required />
+          <div className="invalid-feedback">
+            Please provide a valid zip.
+          </div>
+        </div>
+        <div className="col-12">
+          <div className="form-check">
+            <input className="form-check-input" type="checkbox" value="" id="invalidCheck" required />
+            <label className="form-check-label" htmlFor="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div className="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <div className="col-12">
+          <button className="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
     </div>
+    </>
   );
 };
 
