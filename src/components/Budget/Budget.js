@@ -1,7 +1,11 @@
 import React from 'react';
+import { Footer } from '../Footer';
+import { Navbar } from '../Navbar';
 
-const Contact = () => {
+const Budget = () => {
   return (
+    <>
+    <Navbar />
     <div className='container' id='contacto'>
       <div className='d-flex justify-content-between row m-0 pt-4'>
         <div className='col-xl-5 col-12 p-0'>
@@ -18,7 +22,7 @@ const Contact = () => {
           </div>
         </div>
         <div className='col-xl-5 col-12'>
-          <h2 className='mb-4'>FORMULARIO DE CONTACTO</h2>
+          <h2 className='mb-4'>SOLICITUD DE PRESUPUESTO</h2>
           <div className="mb-3">
             <label htmlFor="fullName" className="form-label">Nombre Completo</label>
             <input type="text" className="form-control" id="fullName" placeholder="Ingrese su nombre completo" />
@@ -54,7 +58,9 @@ const Contact = () => {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 
-export default Contact;
+export default Budget;

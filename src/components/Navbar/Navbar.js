@@ -21,7 +21,9 @@ const Navbar = () => {
               <Link className="nav-link text-center" to="/siniestro">Deseo gestionar mi siniestro</Link>
             </li>
             <li className="nav-item p-2"><a className="nav-link text-center" aria-current="page" href="/#reparacion">Reparación sin costo</a></li>
-            <li className="nav-item p-2"><a className="nav-link text-center" aria-current="page" href="/#contacto">Contacto</a></li>
+            <li className="nav-item p-2">
+              <Link className="nav-link text-center" aria-current="page" to='/presupuesto'>Solicitar mi presupuesto</Link>
+            </li>
           </ul>
         </div>
       </div>
