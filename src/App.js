@@ -1,14 +1,18 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Navbar } from './components/Navbar';
+import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
 import ManageSinisterPage from './pages/ManageSinister/ManageSinisterPage';
 
 const App = () => {
   return (
     <BrowserRouter>
+      <Navbar />
       <Routes>
-        <Route path='/inicio' element={ <Home /> } />
+        <Route path='/' element={ <Home /> } />
         <Route path='/siniestro' element={ <ManageSinisterPage /> } />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };

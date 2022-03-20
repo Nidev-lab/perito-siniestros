@@ -15,7 +15,7 @@ const Navbar = () => {
           <span className="fw-light fst-italic text-decoration-underline p-2 text-center">¿Cuál es su deseo?</span>
           <ul className="navbar-nav">
             <li className="nav-item p-2">
-              <Link className="nav-link text-center" to='/inicio'>Inicio</Link>
+              <Link className="nav-link text-center" to='/'>Inicio</Link>
             </li>
             <li className="nav-item p-2">
               <Link className="nav-link text-center" to="/siniestro">Deseo gestionar mi siniestro</Link>

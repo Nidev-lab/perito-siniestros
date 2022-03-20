@@ -1,15 +1,5 @@
-import { Navbar } from '../../components/Navbar';
 import { ManageSinister } from '../../components/ManageSinister';
-import { Footer } from '../../components/Footer';
 
-const ManageSinisterPage = () => {
-  return (
-    <>
-      <Navbar />
-      <ManageSinister />
-      <Footer />
-    </>
-  );
-};
+const ManageSinisterPage = () => <ManageSinister />;
 
 export default ManageSinisterPage;
