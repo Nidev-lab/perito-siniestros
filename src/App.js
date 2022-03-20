@@ -1,11 +1,15 @@
-import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
+import ManageSinisterPage from './pages/ManageSinister/ManageSinisterPage';
 
 const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-    </Routes>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/inicio' element={ <Home /> } />
+        <Route path='/siniestro' element={ <ManageSinisterPage /> } />
+      </Routes>
+    </BrowserRouter>
   );
 };
 

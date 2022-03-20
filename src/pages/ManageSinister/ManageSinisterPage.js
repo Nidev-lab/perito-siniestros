@@ -1,15 +1,15 @@
 import { Navbar } from '../../components/Navbar';
-import { Carousel } from '../../components/Carousel';
+import { ManageSinister } from '../../components/ManageSinister';
 import { Footer } from '../../components/Footer';
 
-const Home = () => {
+const ManageSinisterPage = () => {
   return (
     <>
       <Navbar />
-      <Carousel />
+      <ManageSinister />
       <Footer />
     </>
   );
 };
 
-export default Home;
+export default ManageSinisterPage;
