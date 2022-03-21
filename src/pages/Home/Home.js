@@ -1,21 +1,5 @@
-import { Navbar } from '../../components/Navbar';
-import { Carousel } from '../../components/Carousel';
-import { ManageSinister } from '../../components/ManageSinister';
-import { FreeRepair } from '../../components/FreeRepair';
-import { Contact } from '../../components/Contact';
-import { Footer } from '../../components/Footer';
+import { Hero } from '../../components/Hero';
 
-const Home = () => {
-  return (
-    <>
-      <Navbar />
-      <Carousel />
-      <ManageSinister />
-      <FreeRepair />
-      <Contact />
-      <Footer />
-    </>
-  );
-};
+const Home = () => <Hero />;
 
 export default Home;
