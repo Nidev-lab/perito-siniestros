@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Contact = () => {
+const Budget = () => {
   return (
     <div className='container'>
       <div className='d-flex justify-content-between row m-0 pt-4'>
@@ -57,4 +57,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Budget;
