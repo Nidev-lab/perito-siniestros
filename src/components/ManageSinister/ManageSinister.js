@@ -9,65 +9,65 @@ const ManageSinister = () => {
           <h5>Datos del tercero</h5>
         </div>
         <div className='col-md-5'>
-          <label htmlFor='validacionCia' className='form-label'>Compañia de seguro</label>
-          <input type='text' className='form-control' id='validationCia' required />
+          <label htmlFor='cia-tercero' className='form-label'>Compañia de seguro</label>
+          <input type='text' className='form-control' id='cia-tercero' required />
           <div className='valid-feedback'>Completo!</div>
         </div>
         <div className='col-md-5'>
-          <label htmlFor='validacionCobertura' className='form-label'>Cobertura</label>
-          <input type='text' className='form-control' id='validationCobertura' required />
+          <label htmlFor='cobertura-tercero' className='form-label'>Cobertura</label>
+          <input type='text' className='form-control' id='cobertura-tercero' required />
           <div className='valid-feedback'>Completo!</div>
         </div>
         <div className='col-md-5'>
-          <label htmlFor='validacionPoliza' className='form-label'>Poliza de seguros</label>
-          <input type='text' className='form-control' id='validacionPoliza' required />
+          <label htmlFor='poliza-tercero' className='form-label'>Poliza de seguros</label>
+          <input type='text' className='form-control' id='poliza-tercero' required />
           <div className='valid-feedback'>Completo!</div>
         </div>
         <hr/>
         <div className='col-md-3'>
-          <label htmlFor='validacionSiniestro' className='form-label'>Número de siniestro</label>
-          <input type='text' className='form-control' id='validacionSiniestro' required />
+          <label htmlFor='numero-siniestro' className='form-label'>Número de siniestro</label>
+          <input type='text' className='form-control' id='numero-siniestro' required />
           <div className='valid-feedback'>Completo!</div>
         </div>
         <div className='col-md-3'>
-          <label htmlFor='validationCustom01' className='form-label'>Número de denuncia</label>
-          <input type='text' className='form-control' id='validacionSiniestro' required />
+          <label htmlFor='numero-denuncia' className='form-label'>Número de denuncia</label>
+          <input type='text' className='form-control' id='numero-denuncia' required />
           <div className='valid-feedback'>Completo!</div>
         </div>
         <hr/>
         <div className='col-md-5'>
-          <label htmlFor='validacionNombre' className='form-label'>Nombre</label>
-          <input type='text' className='form-control' id='validacionNombre' required />
+          <label htmlFor='nombre-tercero' className='form-label'>Nombre</label>
+          <input type='text' className='form-control' id='nombre-tercero' required />
           <div className='valid-feedback'>Completo!</div>
         </div>
         <div className='col-md-5'>
-          <label htmlFor='validacionNombre' className='form-label'>Apellido</label>
-          <input type='text' className='form-control' id='validacionNombre' required />
+          <label htmlFor='apellido-tercero' className='form-label'>Apellido</label>
+          <input type='text' className='form-control' id='apellido-tercero' required />
           <div className='valid-feedback'>Completo!</div>
         </div>
         <div className='col-md-3'>
-          <label htmlFor='validacionDoc' className='form-label'>Documento</label>
-          <input type='text' className='form-control' id='validacionDoc' required />
+          <label htmlFor='documento-tercero' className='form-label'>Documento</label>
+          <input type='text' className='form-control' id='documento-tercero' required />
           <div className='valid-feedback'>Completo!</div>
         </div>
         <div className='col-md-3'>
-          <label htmlFor='validacionDom' className='form-label'>Domicilio</label>
-          <input type='text' className='form-control' id='validacionDom' required />
+          <label htmlFor='domicilio-tercero' className='form-label'>Domicilio</label>
+          <input type='text' className='form-control' id='domicilio-tercero' required />
           <div className='valid-feedback'>Completo!</div>
         </div>
         <div className='col-md-3'>
-          <label htmlFor='validacionTelefono' className='form-label'>Telefono de contacto</label>
-          <input type='text' className='form-control' id='validacionTelefono' required />
+          <label htmlFor='telefono-tercero' className='form-label'>Telefono de contacto</label>
+          <input type='text' className='form-control' id='telefono-tercero' required />
           <div className='valid-feedback'>Completo!</div>
         </div>
         <div className='col-md-5'>
-          <label htmlFor='validacionMarca' className='form-label'>Marca del auto</label>
-          <input type='text' className='form-control' id='validacionMarca' required />
+          <label htmlFor='marca-tercero' className='form-label'>Marca del auto</label>
+          <input type='text' className='form-control' id='marca-tercero' required />
           <div className='valid-feedback'>Completo!</div>
         </div>
         <div className='col-md-5'>
-          <label htmlFor='validacionModelo' className='form-label'>Modelo del vehiculo</label>
-          <input type='text' className='form-control' id='validacionModelo' required />
+          <label htmlFor='modelo-tercero' className='form-label'>Modelo del vehiculo</label>
+          <input type='text' className='form-control' id='modelo-tercero' required />
           <div className='valid-feedback'>Completo!</div>
         </div>
         <hr/>
@@ -75,56 +75,56 @@ const ManageSinister = () => {
           <h5>Datos del solicitante</h5>
         </div>
         <div className='col-md-5'>
-          <label htmlFor='validacionNombre' className='form-label'>Nombre</label>
-          <input type='text' className='form-control' id='validacionNombre' required />
+          <label htmlFor='nombre-solicitante' className='form-label'>Nombre</label>
+          <input type='text' className='form-control' id='nombre-solicitante' required />
           <div className='valid-feedback'>Completo!</div>
         </div>
         <div className='col-md-5'>
-          <label htmlFor='validacionNombre' className='form-label'>Apellido</label>
-          <input type='text' className='form-control' id='validacionNombre' required />
+          <label htmlFor='apellido-solicitante' className='form-label'>Apellido</label>
+          <input type='text' className='form-control' id='apellido-solicitante' required />
           <div className='valid-feedback'>Completo!</div>
         </div>
         <div className='col-md-3'>
-          <label htmlFor='validacionDoc' className='form-label'>Documento</label>
-          <input type='text' className='form-control' id='validacionDoc' required />
+          <label htmlFor='documento-solicitante' className='form-label'>Documento</label>
+          <input type='text' className='form-control' id='documento-solicitante' required />
           <div className='valid-feedback'>Completo!</div>
         </div>
         <div className='col-md-3'>
-          <label htmlFor='validacionDom' className='form-label'>Domicilio</label>
-          <input type='text' className='form-control' id='validacionDom' required />
+          <label htmlFor='domicilio-solicitante' className='form-label'>Domicilio</label>
+          <input type='text' className='form-control' id='domicilio-solicitante' required />
           <div className='valid-feedback'>Completo!</div>
         </div>
         <div className='col-md-3'>
-          <label htmlFor='validacionTelefono' className='form-label'>Telefono de contacto</label>
-          <input type='text' className='form-control' id='validacionTelefono' required />
+          <label htmlFor='telefono-solicitante' className='form-label'>Telefono de contacto</label>
+          <input type='text' className='form-control' id='telefono-solicitante' required />
           <div className='valid-feedback'>Completo!</div>
         </div>
         <div className='col-md-5'>
-          <label htmlFor='validacionCia' className='form-label'>Compañia de seguro</label>
-          <input type='text' className='form-control' id='validacionCia' required />
+          <label htmlFor='cia-solicitante' className='form-label'>Compañia de seguro</label>
+          <input type='text' className='form-control' id='cia-solicitante' required />
           <div className='valid-feedback'>Completo!</div>
         </div>
         <div className='col-md-5'>
-          <label htmlFor='validacionCobertura' className='form-label'>Cobertura</label>
-          <input type='text' className='form-control' id='validacionCobertura' required />
+          <label htmlFor='cobertura-solicitante' className='form-label'>Cobertura</label>
+          <input type='text' className='form-control' id='cobertura-solicitante' required />
           <div className='valid-feedback'>Completo!</div>
         </div>
         <div className='col-md-5'>
-          <label htmlFor='validacionPoliza' className='form-label'>Poliza de seguros</label>
-          <input type='text' className='form-control' id='validacionPoliza' required />
+          <label htmlFor='poliza-solicitante' className='form-label'>Poliza de seguros</label>
+          <input type='text' className='form-control' id='poliza-solicitante' required />
           <div className='valid-feedback'>Completo!</div>
         </div>
         <hr/>
         <div className='col-md-7 me-3'>
-          <label htmlFor='validacionComentario' className='form-label'>Cuentanos lo sucedido</label>
-          <textarea className='form-control' id='validacionComentario' rows='3' required></textarea>
+          <label htmlFor='comentario' className='form-label'>Cuentanos lo sucedido</label>
+          <textarea className='form-control' id='comentario' rows='3' required></textarea>
         </div>
         <div className='col-md-3 ms-3'>
           <label className='form-label'>Horario de contacto</label>
           <input type='time' className='form-control' disabled />
         </div>
         <div className='col-12 m-3'>
-          <button className='btn btn-primary' type='submit'>Submit form</button>
+          <button className='btn btn-primary' type='submit'>Enviar consulta</button>
         </div>
       </form>
     </div>
