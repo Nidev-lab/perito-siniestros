@@ -3,6 +3,8 @@ import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
 import ManageSinisterPage from './pages/ManageSinister/ManageSinisterPage';
+import FreeRepair from './pages/FreeRepair/FreeRepairPage';
+import BudgetPage from './pages/Budget/BudgetPage';
 
 const App = () => {
   return (
@@ -11,6 +13,8 @@ const App = () => {
       <Routes>
         <Route path='/' element={ <Home /> } />
         <Route path='/siniestro' element={ <ManageSinisterPage /> } />
+        <Route path='/reparar' element={ <FreeRepair /> } />
+        <Route path='/presupuesto' element={ <BudgetPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
