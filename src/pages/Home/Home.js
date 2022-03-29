@@ -1,5 +1,5 @@
-import { Carousel } from '../../components/Carousel';
+import { Hero } from '../../components/Hero';
 
-const Home = () => <Carousel />;
+const Home = () => <Hero />;
 
 export default Home;
