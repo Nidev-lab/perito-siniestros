@@ -2,7 +2,7 @@ import React from 'react';
 
 const FreeRepair = () => {
   return (
-    <div className="container" id="reparacion">
+    <div className="container">
       <h3 className='mt-4'>Deseo Reparar mi auto sin costo</h3>
       <div className='row'>
         <div className='col-12'>
