@@ -1,17 +1,19 @@
-import { Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar/Navbar';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Navbar } from './components/Navbar';
+import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
-import Footer from './components/Footer/Footer';
+import ManageSinisterPage from './pages/ManageSinister/ManageSinisterPage';
 
 const App = () => {
   return (
-    <>
-      <Navbar/>
+    <BrowserRouter>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path='/' element={ <Home /> } />
+        <Route path='/siniestro' element={ <ManageSinisterPage /> } />
       </Routes>
-      <Footer/>
-    </>
+      <Footer />
+    </BrowserRouter>
   );
 };
 

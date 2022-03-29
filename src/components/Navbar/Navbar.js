@@ -12,7 +12,6 @@ const Navbar = () => {
       </div>
       <div className="collapse navbar-collapse" id="navbarContent">
         <div className="d-flex flex-column me-auto mb-2 mb-lg-0">
-          <span className="fw-light fst-italic text-decoration-underline p-2 text-center">¿Cuál es su deseo?</span>
           <ul className="navbar-nav">
             <li className="nav-item p-2">
               <Link className="nav-link text-center" to='/'>Inicio</Link>
