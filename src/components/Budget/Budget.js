@@ -2,21 +2,31 @@ import React from 'react';
 
 const Budget = () => {
   return (
-    <div className="container d-flex">
-        <div className="col-xl-5 col-12 m-5 card">
-          <div className="card-title">
-            <h2 className="mb-4 ps-2 card-title fs-1 display-6">MEDIOS DE CONTACTO</h2>
-          </div>
-          <div className="card-body">
-              <span className="list-group-item">Correo electrónico: <i>perito.agomez@gmail.com</i></span>
+    <div className="container d-md-flex">
+        <div className="col-md-6 mt-5 d-flex flex-column border-end">
+            <h2 className="m-md-5 card-title fs-1 display-6">MEDIOS DE CONTACTO</h2>
+          <div className="d-flex flex-column ms-4">
+            <div className="d-lg-flex mt-md-4">
+              <p className="ms-md-5">Correo electrónico:</p>
+              <p className="ms-md-4 fst-italic">perito.agomez@gmail.com</p>
             </div>
-            <div className="card-footer">
-              <span className="text-center p-3">Redes Sociales</span>
-              <a href="/#" className="card-link text-decoration-none text-dark">Facebook</a>
-              <a href="/#" className="card-link text-decoration-none text-dark">Instagram</a>
+            <div className="ps-md-5 d-sm-flex">
+              <span className="me-md-1 pe-md-5">Redes Sociales:</span>
+              <div>
+                <a href="/#" className="card-link text-decoration-none text-dark ps-md-1">
+                  <i className="fa-brands fa-facebook-square pe-2"></i>
+                  Facebook
+                </a>
+                <a href="/#" className="card-link text-decoration-none text-dark">
+                  <i className="fa-brands fa-instagram-square px-2"></i>
+                  Instagram
+                </a>
+              </div>
             </div>
           </div>
-        <div className="col-xl-4 col-12 m-5">
+         </div>
+        {/*-------------------------------------------------------*/}
+        <div className="col-md-6 p-5">
           <h2 className="mb-4 fs-2 display-6">Solicitud de presupuesto</h2>
           <div className="mb-3">
             <label htmlFor="fullName" className="form-label">Nombre Completo</label>
@@ -33,17 +43,16 @@ const Budget = () => {
             </div>
             <div className="col-lg-4 mb-3">
               <label htmlFor="time" className="form-label">Horario de contacto</label>
-              <input type="time" className="form-control" id="time" placeholder="Ingrese su número de teléfono" />
+              <input type="time" className="form-control" id="time" placeholder="Ingrese su número de teléfono" disabled />
             </div>
-          </div>
-          <div className="mb-3">
-            <label htmlFor="matter" className="form-label">Asunto</label>
           </div>
           <div className="mb-3">
             <label htmlFor="consult" className="form-label">Consulta</label>
             <textarea className="form-control" id="consult" rows="3" placeholder="Ingrese su consulta"></textarea>
           </div>
-          <button type="button" className="btn btn-success">Enviar</button>
+          <div className="text-lg-end text-sm-center">
+            <button type="button" className="btn btn-primary px-4">Solicitar presupuesto</button>
+          </div>
         </div>
     </div>
   );
