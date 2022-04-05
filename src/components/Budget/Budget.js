@@ -2,55 +2,55 @@ import React from 'react';
 
 const Budget = () => {
   return (
-    <div className='container'>
-      <div className='d-flex justify-content-between row m-0 pt-4'>
-        <div className='col-xl-5 col-12 p-0'>
-          <h2 className='mb-4'>DATOS DE CONTACTO</h2>
-          <div className="card">
-            <ul className="list-group list-group-flush p-2">
-              <li className="list-group-item">Correo electrónico: <a href="/#">perito.agomez@gmail.com</a></li>
-            </ul>
-            <span className='text-center p-3'>Redes Sociales</span>
-            <div className="card-body d-flex justify-content-evenly">
-              <a href="/#" className="card-link text-decoration-none text-dark">Facebook</a>
-              <a href="/#" className="card-link text-decoration-none text-dark">Instagram</a>
+    <div className="container d-md-flex">
+      <div className="col-md-6 mt-5 d-lg-flex text-center flex-column border-end">
+        <h2 className="m-md-5 card-title fs-1 display-6">MEDIOS DE CONTACTO</h2>
+        <div className="d-flex flex-column ms-4">
+          <div className="d-lg-flex mt-md-4">
+            <p className="ms-lg-5">Correo electrónico:</p>
+            <p className="ms-lg-4 fst-italic">perito.agomez@gmail.com</p>
+          </div>
+          <div className="ps-lg-5 d-sm-flex align-items-center">
+            <span className="me-md-5">Redes Sociales:</span>
+            <div className="d-flex justify-content-evenly text-center">
+              <a href="/#" className="card-link text-decoration-none text-dark">
+                <i className="bi bi-facebook me-1 fs-5"></i>
+                Facebook
+              </a>
+              <a href="/#" className="card-link text-decoration-none text-dark">
+                <i className="bi bi-instagram me-1 fs-5"></i>
+                Instagram
+              </a>
             </div>
           </div>
         </div>
-        <div className='col-xl-5 col-12'>
-          <h2 className='mb-4'>FORMULARIO DE CONTACTO</h2>
-          <div className="mb-3">
-            <label htmlFor="fullName" className="form-label">Nombre Completo</label>
-            <input type="text" className="form-control" id="fullName" placeholder="Ingrese su nombre completo" />
+      </div>
+      <div className="col-md-6 p-5 mt-5">
+        <h2 className="mb-4 fs-2 display-6">Solicitud de presupuesto</h2>
+        <div className="mb-3">
+          <label htmlFor="fullName" className="form-label">Nombre Completo</label>
+          <input type="text" className="form-control" id="fullName" placeholder="Ingrese su nombre completo" />
+        </div>
+        <div className="mb-3">
+          <label htmlFor="email" className="form-label">Correo Electrónico</label>
+          <input type="email" className="form-control" id="email" placeholder="Ingrese su correo electrónico" />
+        </div>
+        <div className="row justify-content-between">
+          <div className="col-lg-6 mb-3">
+            <label htmlFor="tel" className="form-label">Teléfono</label>
+            <input type="tel" className="form-control" id="tel" placeholder="Ingrese su número de teléfono" />
           </div>
-          <div className="mb-3">
-            <label htmlFor="email" className="form-label">Correo Electrónico</label>
-            <input type="email" className="form-control" id="email" placeholder="Ingrese su correo electrónico" />
+          <div className="col-lg-4 mb-3">
+            <label htmlFor="time" className="form-label">Horario de contacto</label>
+            <input type="time" className="form-control" id="time" placeholder="Ingrese su número de teléfono" disabled />
           </div>
-          <div className='row justify-content-between'>
-            <div className='col-lg-6 mb-3'>
-              <label htmlFor="tel" className="form-label">Teléfono</label>
-              <input type="tel" className="form-control" id="tel" placeholder="Ingrese su número de teléfono" />
-            </div>
-            <div className='col-lg-4 mb-3'>
-              <label htmlFor="time" className="form-label">Horario de contacto</label>
-              <input type="time" className="form-control" id="time" placeholder="Ingrese su número de teléfono" />
-            </div>
-          </div>
-          <div className="mb-3">
-            <label htmlFor="matter" className="form-label">Asunto</label>
-            <select className="form-select" aria-label="Default select example" defaultValue={'default'}>
-              <option value="default" disabled>Seleccione el motivo de su consulta</option>
-              <option value="1">Presupuesto</option>
-              <option value="2">No tengo seguro</option>
-              <option value="3">Otras</option>
-            </select>
-          </div>
-          <div className="mb-3">
-            <label htmlFor="consult" className="form-label">Consulta</label>
-            <textarea className="form-control" id="consult" rows="3" placeholder='Ingrese su consulta'></textarea>
-          </div>
-          <button type="button" className="btn btn-success">Enviar</button>
+        </div>
+        <div className="mb-3">
+          <label htmlFor="consult" className="form-label">Consulta</label>
+          <textarea className="form-control" id="consult" rows="3" placeholder="Ingrese su consulta"></textarea>
+        </div>
+        <div className="text-lg-end text-sm-center">
+          <button type="button" className="btn btn-primary px-4">Solicitar presupuesto</button>
         </div>
       </div>
     </div>
