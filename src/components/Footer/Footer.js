@@ -26,9 +26,10 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className='col-12 py-2 d-flex justify-content-center'>
-          <p className='fw-bold m-4'>Todos los derechos reservados © 2022
-            <a href='www.lagerdevs.com' className='card-link text-decoration-none text-dark'> LagerDevs</a>
+        <div className='col-12 py-2 mt-2 d-flex justify-content-between'>
+          <p className='text-decoration-none fw-bold text-dark'>Todos los derechos reservados © 2022 El Genio Del Siniestro</p>
+          <p>Design and Develop by
+            <a href='www.lagerdevs.com' className='text-decoration-none fw-bold text-dark'> LagerDevs</a>
           </p>
         </div>
       </div>

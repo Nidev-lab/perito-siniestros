@@ -7,69 +7,69 @@ import listItem from '../../assets/img/item.png';
 
 const Carousel = () => {
   return (
-    <div className="hero-container d-flex flex-wrap">
-      <div id="carousel-controls" className="col-12 carousel slide carousel-height" data-bs-ride="carousel">
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img src={carousel1} className="d-block w-100" alt="image" />
+    <div className='hero-container d-flex flex-wrap'>
+      <div id='carousel-controls' className='col-12 carousel slide carousel-height' data-bs-ride='carousel'>
+        <div className='carousel-inner'>
+          <div className='carousel-item active'>
+            <img src={carousel1} className='d-block w-100' alt='image' />
           </div>
-          <div className="carousel-item">
-            <img src={carousel2} className="d-block w-100" alt="image" />
+          <div className='carousel-item'>
+            <img src={carousel2} className='d-block w-100' alt='image' />
           </div>
-          <div className="carousel-item">
-            <img src={carousel3} className="d-block w-100" alt="image" />
+          <div className='carousel-item'>
+            <img src={carousel3} className='d-block w-100' alt='image' />
           </div>
         </div>
-        <button className="carousel-control-prev" type="button" data-bs-target="#carousel-controls" data-bs-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Previous</span>
+        <button className='carousel-control-prev' type='button' data-bs-target='#carousel-controls' data-bs-slide='prev'>
+          <span className='carousel-control-prev-icon' aria-hidden='true'></span>
+          <span className='visually-hidden'>Previous</span>
         </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#carousel-controls" data-bs-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
+        <button className='carousel-control-next' type='button' data-bs-target='#carousel-controls' data-bs-slide='next'>
+          <span className='carousel-control-next-icon' aria-hidden='true'></span>
+          <span className='visually-hidden'>Next</span>
         </button>
       </div>
-      <div className="col-12 d-flex justify-content-evenly flex-wrap mt-5">
-        <div className="col-md-5 d-flex align-items-center justify-content-center flex-column mb-5 pb-5">
-          <div className="d-flex justify-content-center flex-column m-sm-1">
-            <p className="fw-normal">Un accidente de tránsito es siempre una experiencia difícil. A veces, el miedo y el estrés nos impiden reaccionar adecuadamente. Por ese motivo, es muy importante saber de antemano, qué pasos debemos seguir.</p>
-            <p className="fw-normal text-center"><b>Hacer lo adecuado nos ayuda a resolver más fácil la situación.</b></p>
+      <div className='col-12 d-flex justify-content-evenly flex-wrap mt-5'>
+        <div className='col-md-5 d-flex align-items-center justify-content-center flex-column mb-5 pb-5'>
+          <div className='d-flex justify-content-center flex-column m-sm-1'>
+            <p className='fw-normal'>Un accidente de tránsito es siempre una experiencia difícil. A veces, el miedo y el estrés nos impiden reaccionar adecuadamente. Por ese motivo, es muy importante saber de antemano, qué pasos debemos seguir.</p>
+            <p className='fw-normal text-center'><b>Hacer lo adecuado nos ayuda a resolver más fácil la situación.</b></p>
           </div>
-          <img src={logoHero} width="150" />
+          <img src={logoHero} width='150' />
         </div>
-        <div className="col-md-5">
-          <button className="btn w-100 alert-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample" title="Haz click para ver las sugerencias">
+        <div className='col-md-5'>
+          <button className='btn w-100 alert-primary' type='button' data-bs-toggle='collapse' data-bs-target='#collapseWidthExample' aria-expanded='false' aria-controls='collapseWidthExample' title='Haz click para ver las sugerencias'>
               <i>Sugerencias</i>
           </button>
-          <div className="collapse" id="collapseWidthExample">
-            <div className="card card-body w-100">
-              <div className="ms-2">
-                <img src={listItem} className="pe-2"/>
-                <span className="fs-6 fw-light">Comprobá que los pasajeros de tu auto no tengan lesiones.</span>
+          <div className='collapse' id='collapseWidthExample'>
+            <div className='card card-body w-100'>
+              <div className='ms-2'>
+                <img src={listItem} className='pe-2'/>
+                <span className='fs-6 fw-light'>Comprobá que los pasajeros de tu auto no tengan lesiones.</span>
               </div>
-              <div className="ms-2">
-                <img src={listItem} className="pe-2"/>
-                <span className="fw-light">Tomate unos segundos para recuperar la calma.</span>
+              <div className='ms-2'>
+                <img src={listItem} className='pe-2'/>
+                <span className='fw-light'>Tomate unos segundos para recuperar la calma.</span>
               </div>
-              <div className="ms-2">
-                <img src={listItem} className="pe-2"/>
-                <span className="fw-light">Apagá el motor y encendé las balizas.</span>
+              <div className='ms-2'>
+                <img src={listItem} className='pe-2'/>
+                <span className='fw-light'>Apagá el motor y encendé las balizas.</span>
               </div>
-              <div className="ms-2">
-                <img src={listItem} className="pe-2"/>
-                <span className="fw-light">Corrobora que los pasajeros del otro vehículo se encentren bien. Llamá a emergencias si es necesario.</span>
+              <div className='ms-2'>
+                <img src={listItem} className='pe-2'/>
+                <span className='fw-light'>Corrobora que los pasajeros del otro vehículo se encentren bien. Llamá a emergencias si es necesario.</span>
               </div>
-              <div className="ms-2">
-                <img src={listItem} className="pe-2"/>
-                <span className="fw-light">Tené a mano <i>carnet de manejo, documentos del vehículo, DNI y Poliza de tu seguro o bien tarjeta de circulacion</i>. Pedí lo mismo al otro conductor.</span>
+              <div className='ms-2'>
+                <img src={listItem} className='pe-2'/>
+                <span className='fw-light'>Tené a mano <i>carnet de manejo, documentos del vehículo, DNI y Poliza de tu seguro o bien tarjeta de circulacion</i>. Pedí lo mismo al otro conductor.</span>
               </div>
-              <div className="ms-2">
-                <img src={listItem} className="pe-2"/>
-                <span className="fw-light">Tomá nota de la hora, fecha, lugar de ocurrencia, sentido de circulación de los vehículos y fotos del siniestro.</span>
+              <div className='ms-2'>
+                <img src={listItem} className='pe-2'/>
+                <span className='fw-light'>Tomá nota de la hora, fecha, lugar de ocurrencia, sentido de circulación de los vehículos y fotos del siniestro.</span>
               </div>
-              <div className="ms-2">
-                <img src={listItem} className="pe-2"/>
-                <span className="fw-light">Una vez en tu domicilio realiza la denuncia al 0800 de tu compañía, recordá que tenes 48 hs para realizarla.</span>
+              <div className='ms-2'>
+                <img src={listItem} className='pe-2'/>
+                <span className='fw-light'>Una vez en tu domicilio realiza la denuncia al 0800 de tu compañía, recordá que tenes 48 hs para realizarla.</span>
               </div>
             </div>
           </div>
