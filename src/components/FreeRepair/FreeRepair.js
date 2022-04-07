@@ -5,7 +5,7 @@ const FreeRepair = () => {
     <div className="container">
       <h2 className="m-md-5 fs-1 display-6 text-center">Deseo Reparar mi auto sin costo</h2>
       <div className="row">
-        <div className="col-sm-12 col-lg-5 m-lg-5 border-md-end">
+        <div className="col-sm-12 col-md-6 p-lg-5 border-end">
           <div className='my-4'>
             <h5>Condiciones</h5>
             <div>
@@ -32,7 +32,7 @@ const FreeRepair = () => {
             <p className='my-5'>¿Sabías que podés vender tu auto chocado?</p>
           </div>
         </div>
-        <div className="col-sm-12 col-lg-5 m-lg-5">
+        <div className="col-sm-12 col-md-6 p-md-5">
           <h2 className="mb-4 fs-2 display-6">Solicitar reparación</h2>
           <div className="col-12 mb-3">
             <label htmlFor="fullName" className="form-label">Nombre Completo</label>
@@ -47,9 +47,9 @@ const FreeRepair = () => {
               <label htmlFor="tel" className="form-label">Teléfono</label>
               <input type="tel" className="form-control" id="tel" placeholder="Ingrese su número de teléfono" />
             </div>
-            <div className="col-12 col-lg-9 mb-3">
+            <div className="col-md-8 col-lg-9 mb-3">
               <label htmlFor="time" className="form-label">Horario de contacto</label>
-              <input type="text" className="form-control" id="time" value="Lun. a Vie. 09hs-18s y Sab. 9hs-12hs" placeholder="Ingrese su número de teléfono" disabled />
+              <input type="text" className="form-control text-center" id="time" value="Lun. a Vie. 09hs-18s y Sab. 9hs-12hs" placeholder="Ingrese su número de teléfono" disabled />
             </div>
           </div>
           <div className="col-12 mb-3">

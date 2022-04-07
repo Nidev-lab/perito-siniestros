@@ -3,7 +3,7 @@ import React from 'react';
 const ManageSinister = () => {
   return (
     <div className='container'>
-      <h2 className='text-center m-4'>Deseo Gestionar un siniestro</h2>
+      <h2 className='m-md-5 fs-1 display-6 text-center'>Deseo Gestionar un siniestro</h2>
       <form className='row g-3 needs-validation' noValidate>
         <div>
           <h5>Datos del tercero</h5>
@@ -115,15 +115,15 @@ const ManageSinister = () => {
           <div className='valid-feedback'>Completo!</div>
         </div>
         <hr/>
-        <div className='col-md-7 me-3'>
+        <div className='col-md-7 me-md-3'>
           <label htmlFor='comentario' className='form-label'>Cuentanos lo sucedido</label>
           <textarea className='form-control' id='comentario' rows='3' required></textarea>
         </div>
-        <div className='col-md-3 ms-3'>
+        <div className='col-md-4 ms-md-3'>
           <label className='form-label'>Horario de contacto</label>
-          <input type='time' className='form-control' disabled />
+          <input type='text' className='form-control text-center' value='Lun. a Vie. 9hs-18hs y Sab. 9hs-12hs' disabled />
         </div>
-        <div className='col-12 m-3'>
+        <div className='col-12 m-md-3'>
           <button className='btn btn-primary' type='submit'>Enviar consulta</button>
         </div>
       </form>

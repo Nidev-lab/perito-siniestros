@@ -25,34 +25,34 @@ const Budget = () => {
           </div>
         </div>
       </div>
-      <div className="col-md-6 p-5 mt-5">
-        <h2 className="mb-4 fs-2 display-6">Solicitud de presupuesto</h2>
-        <div className="mb-3">
-          <label htmlFor="fullName" className="form-label">Nombre Completo</label>
-          <input type="text" className="form-control" id="fullName" placeholder="Ingrese su nombre completo" />
-        </div>
-        <div className="mb-3">
-          <label htmlFor="email" className="form-label">Correo Electrónico</label>
-          <input type="email" className="form-control" id="email" placeholder="Ingrese su correo electrónico" />
-        </div>
-        <div className="row justify-content-between">
-          <div className="col-lg-6 mb-3">
-            <label htmlFor="tel" className="form-label">Teléfono</label>
-            <input type="tel" className="form-control" id="tel" placeholder="Ingrese su número de teléfono" />
+      <div className="col-sm-12 col-md-6 p-md-5">
+          <h2 className="mb-4 mt-5 fs-2 display-6">Solicitar presupuesto</h2>
+          <div className="col-12 mb-3">
+            <label htmlFor="fullName" className="form-label">Nombre Completo</label>
+            <input type="text" className="form-control" id="fullName" placeholder="Ingrese su nombre completo" />
           </div>
-          <div className="col-lg-4 mb-3">
-            <label htmlFor="time" className="form-label">Horario de contacto</label>
-            <input type="time" className="form-control" id="time" placeholder="Ingrese su número de teléfono" disabled />
+          <div className="col-12 mb-3">
+            <label htmlFor="email" className="form-label">Correo Electrónico</label>
+            <input type="email" className="form-control" id="email" placeholder="Ingrese su correo electrónico" />
+          </div>
+          <div className="row justify-content-between">
+            <div className="col-12 col-lg-6 mb-3">
+              <label htmlFor="tel" className="form-label">Teléfono</label>
+              <input type="tel" className="form-control" id="tel" placeholder="Ingrese su número de teléfono" />
+            </div>
+            <div className="col-md-8 col-lg-9 mb-3">
+              <label htmlFor="time" className="form-label">Horario de contacto</label>
+              <input type="text" className="form-control text-center" id="time" value="Lun. a Vie. 09hs-18s y Sab. 9hs-12hs" placeholder="Ingrese su número de teléfono" disabled />
+            </div>
+          </div>
+          <div className="col-12 mb-3">
+            <label htmlFor="consult" className="form-label">Consulta</label>
+            <textarea className="form-control" id="consult" rows="3" placeholder="Ingrese su consulta"></textarea>
+          </div>
+          <div className="text-lg-end text-sm-center">
+            <button type="button" className="btn btn-primary px-4">Solicitar presupuesto</button>
           </div>
         </div>
-        <div className="mb-3">
-          <label htmlFor="consult" className="form-label">Consulta</label>
-          <textarea className="form-control" id="consult" rows="3" placeholder="Ingrese su consulta"></textarea>
-        </div>
-        <div className="text-lg-end text-sm-center">
-          <button type="button" className="btn btn-primary px-4">Solicitar presupuesto</button>
-        </div>
-      </div>
     </div>
   );
 };

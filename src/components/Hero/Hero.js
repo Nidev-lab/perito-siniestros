@@ -7,8 +7,8 @@ import listItem from '../../assets/img/item.png';
 
 const Carousel = () => {
   return (
-    <div className="hero-container">
-      <div id="carousel-controls" className="carousel slide carousel-height" data-bs-ride="carousel">
+    <div className="hero-container d-flex flex-wrap">
+      <div id="carousel-controls" className="col-12 carousel slide carousel-height" data-bs-ride="carousel">
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img src={carousel1} className="d-block w-100" alt="image" />
@@ -29,9 +29,9 @@ const Carousel = () => {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-      <div className="d-flex justify-content-evenly mt-5">
+      <div className="col-12 d-flex justify-content-evenly flex-wrap mt-5">
         <div className="col-md-5 d-flex align-items-center justify-content-center flex-column mb-5 pb-5">
-          <div className="d-flex justify-content-center flex-column">
+          <div className="d-flex justify-content-center flex-column m-sm-1">
             <p className="fw-normal">Un accidente de tránsito es siempre una experiencia difícil. A veces, el miedo y el estrés nos impiden reaccionar adecuadamente. Por ese motivo, es muy importante saber de antemano, qué pasos debemos seguir.</p>
             <p className="fw-normal text-center"><b>Hacer lo adecuado nos ayuda a resolver más fácil la situación.</b></p>
           </div>
