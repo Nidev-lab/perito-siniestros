@@ -1,5 +1,4 @@
 import React from 'react';
-import { Forms } from '../Forms';
 
 const Budget = () => {
   return (
@@ -26,7 +25,6 @@ const Budget = () => {
           </div>
         </div>
       </div>
-      <Forms className="col-md-6" />
     </div>
   );
 };

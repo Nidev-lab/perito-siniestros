@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Forms = () => {
+const FormsContact = (props) => {
   return (
-    <div className="container-fluid">
+    <div className="col-md-6">
       <div className="p-md-5 mt-md-5">
-        {/* <h2 className="mb-4 fs-2 display-6">Solicitud de presupuesto</h2> */}
+        <h2 className="mb-4 fs-2 display-6">{props.tittle}</h2>
         <div className="mb-3">
           <label htmlFor="fullName" className="form-label">Nombre Completo</label>
           <input type="text" className="form-control" id="fullName" placeholder="Ingrese su nombre completo" />
@@ -28,11 +28,11 @@ const Forms = () => {
           <textarea className="form-control" id="consult" rows="3" placeholder="Ingrese su consulta"></textarea>
         </div>
         <div className="text-lg-end text-sm-center">
-          <button type="button" className="btn btn-primary px-4">Solicitar presupuesto</button>
+          <button type="button" className="btn btn-primary px-4">{props.buttonName}</button>
         </div>
       </div>
     </div>
   );
 };
 
-export default Forms;
+export default FormsContact;
