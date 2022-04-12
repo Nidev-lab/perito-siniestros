@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Forms = (props) => {
+const FormsContact = (props) => {
   return (
-    <div className="container-fluid">
+    <div className="col-md-6">
       <div className="p-md-5 mt-md-5">
         <h2 className="mb-4 fs-2 display-6">{props.tittle}</h2>
         <div className="mb-3">
@@ -35,4 +35,4 @@ const Forms = (props) => {
   );
 };
 
-export default Forms;
+export default FormsContact;
