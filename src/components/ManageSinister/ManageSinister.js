@@ -57,7 +57,8 @@ const ManageSinister = () => {
         </div>
         <div className='col-md-3'>
           <label htmlFor='telefono-tercero' className='form-label'>Telefono de contacto</label>
-          <input type='text' className='form-control' id='telefono-tercero' required />
+          <input type='number' className='form-control' id='telefono-tercero' required />
+          <span id="tel" className="form-text">Con código de área sin el 0 ni el 15. Ej: 3813999999</span>
           <div className='valid-feedback'>Completo!</div>
         </div>
         <div className='col-md-5'>
@@ -96,7 +97,8 @@ const ManageSinister = () => {
         </div>
         <div className='col-md-3'>
           <label htmlFor='telefono-solicitante' className='form-label'>Telefono de contacto</label>
-          <input type='text' className='form-control' id='telefono-solicitante' required />
+          <input type='number' className='form-control' id='telefono-solicitante' required />
+          <span id="tel" className="form-text">Con código de área sin el 0 ni el 15. Ej: 3813999999</span>
           <div className='valid-feedback'>Completo!</div>
         </div>
         <div className='col-md-5'>
