@@ -5,6 +5,7 @@ import { Home } from './pages/Home';
 import ManageSinisterPage from './pages/ManageSinister/ManageSinisterPage';
 import FreeRepair from './pages/FreeRepair/FreeRepairPage';
 import BudgetPage from './pages/Budget/BudgetPage';
+import './App.css';
 
 const App = () => {
   return (
