@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
@@ -11,7 +11,9 @@ import { Loader } from './components/Loader';
 const App = () => {
   const [timeOff, setTimeOff] = useState(true);
 
-  const timer = setTimeout(() => { setTimeOff(false); }, 3000);
+  useEffect(() => {
+    setTimeout(() => { setTimeOff(false); }, 3000);
+  }, []);
 
   return (
     <BrowserRouter>
