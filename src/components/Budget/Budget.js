@@ -3,9 +3,9 @@ import { FormsContact } from '../FormsContact';
 
 const Budget = () => {
   return (
-    <div className="container d-md-flex">
+    <div className="container d-md-flex" data-aos="zoom-in" data-aos-duration="500">
       <div className="col-md-6 mt-5 d-lg-flex text-center flex-column border-end">
-        <h2 className="m-md-5 card-title fs-1 display-6">MEDIOS DE CONTACTO</h2>
+        <h2 className="m-md-5 card-title fs-1 text-center">MEDIOS DE CONTACTO</h2>
         <div className="d-flex flex-column ms-4">
           <div className="d-lg-flex mt-md-4">
             <p className="ms-lg-5">Correo electrónico:</p>
@@ -26,7 +26,7 @@ const Budget = () => {
           </div>
         </div>
       </div>
-      <FormsContact className="col-md-6" titte="Solicitar presupuesto" btnAction="Deseo mi presupuesto!" />
+      <FormsContact className="col-md-6" title="Solicitar presupuesto" btnAction="Deseo Mi Presupuesto!" />
     </div>
   );
 };

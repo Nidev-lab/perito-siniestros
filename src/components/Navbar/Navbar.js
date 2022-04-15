@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light sticky-top navbar-styles">
       <div className="container-fluid navbar-logo mx-lg-5 col-lg-3 logo-box">
-        <Link className="navbar-brand p-2 link-img" to="/">
+        <Link className="navbar-brand link-img" to="/">
           <img src={Logo} alt="El genio del siniestro" />
         </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">

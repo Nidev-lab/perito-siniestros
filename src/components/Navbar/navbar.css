@@ -1,8 +1,7 @@
 .navbar-styles{
     padding-bottom: 0;
-    padding-top: 5px;
-    border-bottom: 2px solid var(--border-color);
-    background: rgb(234,234,234);
+    padding-top: 0px;
+    background: rgba(234, 234, 234, 0.864);
 }
 .navbar-styles .logo-box{
     border-right: 2px solid var(--border-color);
@@ -11,6 +10,7 @@
     width: 220px;
     padding: 5px;
     transition: all 0.3ms ease;
+    border: none;
 }
 .navbar-styles .navbar-text span{
     color: var(--font-color);
