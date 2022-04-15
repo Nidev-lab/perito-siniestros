@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const FormsContact = ({ tittle, btnAction }) => {
+const FormsContact = ({ title, btnAction }) => {
   return (
     <div className="col-md-6">
       <div className="p-md-5 mt-md-5">
-        <h2 className="mb-4 fs-2 display-6">{tittle}</h2>
+        <h2 className="mb-4 fs-2 display-6">{title}</h2>
         <div className="mb-3">
           <label htmlFor="fullName" className="form-label">Nombre Completo</label>
           <input type="text" className="form-control" id="fullName" placeholder="Ingrese su nombre completo" />
