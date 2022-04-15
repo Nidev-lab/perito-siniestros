@@ -32,7 +32,7 @@ const FreeRepair = () => {
           <p className='my-5'>¿Sabías que podés vender tu auto chocado?</p>
         </div>
       </div>
-      <FormsContact className="col-md-6" tittle="Solicitar reparación sin costo" btnAction="Deseo una reparación sin costo!"/>
+      <FormsContact className="col-md-6" title="Solicitar reparación sin costo" btnAction="Deseo una reparación sin costo!"/>
     </div>
   );
 };

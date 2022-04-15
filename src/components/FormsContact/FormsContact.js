@@ -38,7 +38,7 @@ const FormsContact = ({ tittle, btnAction }) => {
 
 FormsContact.propTypes = {
   btnAction: PropTypes.string.isRequired,
-  tittle: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
 };
 
 export default FormsContact;

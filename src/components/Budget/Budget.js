@@ -26,7 +26,7 @@ const Budget = () => {
           </div>
         </div>
       </div>
-      <FormsContact className="col-md-6" tittle="Solicitar presupuesto" btnAction="Deseo mi presupuesto!" />
+      <FormsContact className="col-md-6" title="Solicitar presupuesto" btnAction="Deseo mi presupuesto!" />
     </div>
   );
 };
