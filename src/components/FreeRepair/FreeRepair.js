@@ -4,7 +4,7 @@ import { FormsContact } from '../FormsContact';
 const FreeRepair = () => {
   return (
     <div className="container d-md-flex">
-      <div className="col-md-6 border-end">
+      <div className="col-md-6  mt-5 border-end">
         <h2 className="m-md-5 fs-1 display-6 text-center">Deseo Reparar mi auto sin costo</h2>
         <div className='my-4'>
           <h5>Condiciones</h5>
@@ -32,7 +32,7 @@ const FreeRepair = () => {
           <p className='my-5'>¿Sabías que podés vender tu auto chocado?</p>
         </div>
       </div>
-      <FormsContact className="col-md-6" tittle="Solicitar reparación sin costo" btnAction="Deseo una reparación sin costo!"/>
+      <FormsContact className="col-md-6" title="Solicitar reparación sin costo" btnAction="Deseo una reparación sin costo!"/>
     </div>
   );
 };
