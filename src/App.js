@@ -1,3 +1,4 @@
+import AOS from 'aos';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
@@ -6,6 +7,9 @@ import ManageSinisterPage from './pages/ManageSinister/ManageSinisterPage';
 import FreeRepair from './pages/FreeRepair/FreeRepairPage';
 import BudgetPage from './pages/Budget/BudgetPage';
 import './App.css';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 const App = () => {
   return (

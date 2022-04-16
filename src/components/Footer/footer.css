@@ -1,3 +1,15 @@
-footer {
-  height: 250px;
+.box-footer{
+  margin-top: 50px;
+  margin-bottom: -20px;
+}
+.box-footer .box-info span{
+  font-size: 14px;
+}
+.box-footer .box-info p{
+  font-size: 12px;
+}
+.box-social-icons a i{
+  margin: 0 10px;
+  font-size: 24px;
+  color: var(--font-color);
 }
