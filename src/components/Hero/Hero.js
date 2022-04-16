@@ -21,7 +21,7 @@ const Carousel = () => {
             <img src={carousel3} className="d-block w-100" alt="image" />
           </div>
         </div>
-        <button className="carousel-control-prev" type="button" data-bs-target="#carousel-controls" data-bs-slide="prev">
+        <button className="carousel-control-prev" type="button" data-bs-target="carousel-controls" data-bs-slide="prev">
           <span className="carousel-control-prev-icon" aria-hidden="true"></span>
           <span className="visually-hidden">Previous</span>
         </button>
@@ -36,7 +36,7 @@ const Carousel = () => {
             <p className="fw-normal">Un accidente de tránsito es siempre una experiencia difícil. A veces, el miedo y el estrés nos impiden reaccionar adecuadamente. Por ese motivo, es muy importante saber de antemano, qué pasos debemos seguir.</p>
             <p className="fw-normal"><b>Hacer lo adecuado nos ayuda a resolver más fácil la situación.</b></p>
           </div>
-          <img src={logoHero} width="150" />
+          <img src={logoHero} width='150' />
         </div>
         <div className="col-md-5 box-suggestion">
           <h5>Sugerencias</h5>
@@ -68,7 +68,6 @@ const Carousel = () => {
               <img src={listItem} className="pe-2"/>
               <span className="fw-normal">Una vez en tu domicilio realiza la denuncia al 0800 de tu compañía, recordá que tenes 48 hs para realizarla.</span>
             </div>
-          {/* </div> */}
         </div>
       </div>
     </div>
