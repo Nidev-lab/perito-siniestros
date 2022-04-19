@@ -16,10 +16,10 @@ const Footer = () => {
         <div className="d-sm-flex justify-content-center flex-column mt-3">
           <span className="text-center fw-bold">Redes Sociales</span>
           <div className="d-sm-flex justify-content-center m-sm-3 text-center box-social-icons">
-            <a href="">
+            <a href="/#">
               <i className="bi bi-facebook"></i>
             </a>
-            <a href="">
+            <a href="/#">
               <i className="bi bi-instagram"></i>
             </a>
           </div>
