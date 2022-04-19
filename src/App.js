@@ -1,8 +1,9 @@
-import AOS from 'aos';
 import { useState, useEffect } from 'react';
+import AOS from 'aos';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
+import { Loader } from './components/Loader';
 import { Home } from './pages/Home';
 import ManageSinisterPage from './pages/ManageSinister/ManageSinisterPage';
 import FreeRepair from './pages/FreeRepair/FreeRepairPage';
@@ -11,13 +12,12 @@ import './App.css';
 import 'aos/dist/aos.css';
 
 AOS.init();
-import { Loader } from './components/Loader';
 
 const App = () => {
   const [timeOff, setTimeOff] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => { setTimeOff(false); }, 3000);
+    setTimeout(() => { setTimeOff(false); }, 2270);
   }, []);
 
   return (

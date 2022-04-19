@@ -47,7 +47,8 @@ const ManageSinister = () => {
         </div>
         <div className="col-md-3" data-aos="fade-up">
           <label htmlFor="documento-tercero" className="form-label">Documento</label>
-          <input type="text" className="form-control" id="documento-tercero" required />
+          <input type="number" className="form-control" id="documento-tercero" required />
+          <span id="doc" className="form-text">Ingresar número sin puntos</span>
           <div className="valid-feedback">Completo!</div>
         </div>
         <div className="col-md-3" data-aos="fade-up">
@@ -57,7 +58,8 @@ const ManageSinister = () => {
         </div>
         <div className="col-md-3" data-aos="fade-up">
           <label htmlFor="telefono-tercero" className="form-label">Telefono de contacto</label>
-          <input type="text" className="form-control" id="telefono-tercero" required />
+          <input type="number" className="form-control" id="telefono-tercero" required />
+          <span id="tel" className="form-text">Con código de área sin el 0 ni el 15. Ej: 3816666666</span>
           <div className="valid-feedback">Completo!</div>
         </div>
         <div className="col-md-5" data-aos="fade-up">
@@ -86,7 +88,8 @@ const ManageSinister = () => {
         </div>
         <div className="col-md-3" data-aos="fade-up">
           <label htmlFor="documento-solicitante" className="form-label">Documento</label>
-          <input type="text" className="form-control" id="documento-solicitante" required />
+          <input type="number" className="form-control" id="documento-solicitante" required />
+          <span id="doc" className="form-text">Ingresar número sin puntos</span>
           <div className="valid-feedback">Completo!</div>
         </div>
         <div className="col-md-3" data-aos="fade-up">
@@ -96,7 +99,8 @@ const ManageSinister = () => {
         </div>
         <div className="col-md-3" data-aos="fade-up">
           <label htmlFor="telefono-solicitante" className="form-label">Telefono de contacto</label>
-          <input type="text" className="form-control" id="telefono-solicitante" required />
+          <input type="number" className="form-control" id="telefono-solicitante" required />
+          <span id="tel" className="form-text">Con código de área sin el 0 ni el 15. Ej: 3816666666</span>
           <div className="valid-feedback">Completo!</div>
         </div>
         <div className="col-md-5" data-aos="fade-up">
@@ -121,7 +125,7 @@ const ManageSinister = () => {
         </div>
         <div className="col-md-3 ms-3" data-aos="fade-up">
           <label className="form-label">Horario de contacto</label>
-          <input type="time" className="form-control" disabled />
+          <input type="text" className="form-control" value="Lun. a Vie. 9hs-18hs y Sab. 9hs-12hs" disabled />
         </div>
         <div className="col-12" data-aos="fade-up">
           <button className="btn btn-accept" type="submit">Enviar consulta</button>

@@ -25,9 +25,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="text-center box-info">
-        <p className="fw-bold">Todos los derechos reservados © 2022
-          <a href="www.lagerdevs.com" className="card-link text-decoration-none text-dark"> LagerDevs</a>
+      <div className="container d-md-flex justify-content-between box-info">
+        <p className="fw-bold">Todos los derechos reservados © 2022 El Genio Del Siniestro</p>
+        <p>
+          Desarrollado por
+          <a href="www.lagerdevs.com" className="card-link text-decoration-none text-dark fw-bold"> LagerDevs</a>
         </p>
       </div>
     </footer>
