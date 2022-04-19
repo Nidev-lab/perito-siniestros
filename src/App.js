@@ -1,4 +1,5 @@
 import AOS from 'aos';
+import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
@@ -10,18 +11,33 @@ import './App.css';
 import 'aos/dist/aos.css';
 
 AOS.init();
+import { Loader } from './components/Loader';
 
 const App = () => {
+  const [timeOff, setTimeOff] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => { setTimeOff(false); }, 3000);
+  }, []);
+
   return (
     <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path='/' element={ <Home /> } />
-        <Route path='/siniestro' element={ <ManageSinisterPage /> } />
-        <Route path='/reparar' element={ <FreeRepair /> } />
-        <Route path='/presupuesto' element={ <BudgetPage />} />
-      </Routes>
-      <Footer />
+      {
+        timeOff
+          ? <Loader />
+          : (
+            <>
+              <Navbar />
+                <Routes>
+                  <Route path='/' element={ <Home /> } />
+                  <Route path='/siniestro' element={ <ManageSinisterPage /> } />
+                  <Route path='/reparar' element={ <FreeRepair /> } />
+                  <Route path='/presupuesto' element={ <BudgetPage />} />
+                </Routes>
+              <Footer />
+            </>
+          )
+      }
     </BrowserRouter>
   );
 };
