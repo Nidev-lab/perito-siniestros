@@ -31,7 +31,7 @@ const Carousel = () => {
         </button>
       </div>
       <div className="d-md-flex justify-content-evenly my-5 box-info-hero">
-        <div className="col-md-5 text-center m-4 m-md-0 mt-5 ">
+        <div className="col-md-5 text-center m-4 m-md-0 mt-5">
           <div className="d-flex justify-content-center flex-column">
             <p className="fw-normal">Un accidente de tránsito es siempre una experiencia difícil. A veces, el miedo y el estrés nos impiden reaccionar adecuadamente. Por ese motivo, es muy importante saber de antemano, qué pasos debemos seguir.</p>
             <p className="fw-normal"><b>Hacer lo adecuado nos ayuda a resolver más fácil la situación.</b></p>
