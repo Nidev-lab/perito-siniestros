@@ -18,7 +18,7 @@ const FormsContact = ({ title, btnAction }) => {
           <div className="mb-3">
             <label htmlFor="tel" className="form-label">Teléfono</label>
             <input type="number" className="form-control" id="tel" placeholder="Ingrese su número de teléfono" />
-            <span id="tel" className="form-text">Con código de área sin el 0 ni el 15. Ej: 115218630</span>
+            <span id="tel" className="form-text">Con código de área sin el 0 ni el 15. Ej: 1131111111</span>
           </div>
           <div className="mb-3">
             <label htmlFor="time" className="form-label">Horario de contacto</label>

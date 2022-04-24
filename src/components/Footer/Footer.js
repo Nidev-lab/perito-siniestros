@@ -9,7 +9,7 @@ const Footer = () => {
         <span>Ante cualquier eventualidad no dudes en contactarnos. También nos
             encontrás en redes sociales</span>
       </div>
-      <div className="d-md-flex align-items-center justify-content-around mt-2">
+      <div className="d-md-flex align-items-center justify-content-around my-2 text-center">
         <div className="text-sm-center my-sm-2">
           <img src={logo} alt="logoFooter" width="200" />
         </div>
@@ -25,7 +25,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="container d-md-flex justify-content-between box-info">
+      <div className="container d-md-flex justify-content-between text-center box-info">
         <p className="fw-bold">Todos los derechos reservados © 2022 El Genio Del Siniestro</p>
         <p>
           Desarrollado por
