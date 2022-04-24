@@ -18,7 +18,7 @@
 }
 
 @media (max-width: 768px){
-    .title-navbar{
+    .navbar-text{
         text-align: center;
     }
 }

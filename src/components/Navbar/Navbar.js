@@ -14,7 +14,7 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
       </div>
-      <div className="collapse navbar-collapse navbar-text title-navbar" id="navbarContent">
+      <div className="collapse navbar-collapse navbar-text" id="navbarContent">
         <span className="fw-bold text-start mx-lg-2 col-lg-3">¿Cual es tu deseo?</span>
         <div className="ms-lg-5 me-auto mb-2 mb-lg-0">
           <ul className="navbar-nav">
