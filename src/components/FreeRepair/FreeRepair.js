@@ -36,13 +36,13 @@ const FreeRepair = () => {
             <li>Fotos de los daños (una que se vea la patente).</li>
           </ul>
           <div className="d-flex flex-wrap">
-            <Card info="Foto del auto del lado lateral izquierdo" image={Img1} />
-            <Card info="Foto del auto del lado lateral derecho" image={Img2} />
-            <Card info="Foto del auto del lado frontal" image={Img3} />
-            <Card info="Foto del auto del lado trasero" image={Img4} />
-            <Card info="Foto del parabrisa desde el interior" image={Img5} />
-            <Card info="Foto del cuenta km, con los kilometros totales" image={Img6} />
-            <Card info="Foto de la cédula Verde o Azul, del lado de los datos del vehiculo" image={Img7} />
+            <Card info="Foto del auto del lado lateral izquierdo" infoAlt="Lateral izquierdo del auto" image={Img1} />
+            <Card info="Foto del auto del lado lateral derecho" infoAlt="Lateral derecho del auto" image={Img2} />
+            <Card info="Foto del auto del lado frontal" infoAlt="Lado frontal del auto" image={Img3} />
+            <Card info="Foto del auto del lado trasero" infoAlt="Lado trasero del auto" image={Img4} />
+            <Card info="Foto del parabrisa desde el interior" infoAlt="Parabrisa desde el interior del auto" image={Img5} />
+            <Card info="Foto del cuenta km, con los kilómetros totales" infoAlt="Cuenta km, con los kilometros reales" image={Img6} />
+            <Card info="Foto de la cédula Verde o Azul, del lado de los datos del vehículo" infoAlt="Cédula Azul o Verde" image={Img7} />
           </div>
         </div>
         <div className='my-4'>
