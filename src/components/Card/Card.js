@@ -15,6 +15,7 @@ const Card = ({ info, infoAlt, image }) => {
 
 Card.propTypes = {
   info: PropTypes.string.isRequired,
+  infoAlt: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
 };
 
