@@ -13,10 +13,17 @@ const FormsContact = ({ title, btnAction }) => {
     emailjs.sendForm('service_wod3n1o', 'template_8ki752q', form.current, 'Tiz3khlYsRSA7kxEo')
       .then((result) => {
         if (result.text === 'OK') {
-          setStatusEmail({ msg: 'El mensaje se envió correctamente!', type: 'success' });
+          setStatusEmail({
+            msg: 'El mensaje se envió correctamente!',
+            type: 'success',
+          });
         }
       }, (error) => {
-        setStatusEmail({ msg: 'Ups...parece que algo salió mal, intenta mas tarde!', type: 'danger' });
+        setStatusEmail({
+          error,
+          msg: 'Ups...parece que algo salió mal, intenta mas tarde!',
+          type: 'danger',
+        });
       });
   };
 
@@ -52,8 +59,8 @@ const FormsContact = ({ title, btnAction }) => {
       </form>
       {
         statusEmail
-        ? <Alert type={statusEmail.type} msg={statusEmail.msg}/>
-        : <></>
+          ? <Alert type={statusEmail.type} msg={statusEmail.msg}/>
+          : <></>
       }
     </div>
   );

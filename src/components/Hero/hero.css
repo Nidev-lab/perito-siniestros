@@ -1,0 +1,15 @@
+.hero-container .box-suggestion h5{
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    border-bottom: 5px solid transparent;
+    border-image: linear-gradient(to right, #131B41 5%, #1798E0 95%) 1;
+}
+@media (max-width: 768px) {
+    .hero-container .box-info-hero{
+        margin-top: 20px;
+    }
+    .hero-container .box-suggestion h5{
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+}
