@@ -1,0 +1,13 @@
+.card-example{
+    width: 150px;
+    margin: 5px;
+    border: none;
+    text-align: center;
+}
+.card-example img{
+    border: 3px outset #1C6EA4;
+    border-radius: 28px 28px 28px 28px;
+}
+.card-example .example-text{
+    font-size: 14px;
+}
