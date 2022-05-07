@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Alert from '../Alert/Alert';
 
 const FormsContact = ({ title, btnAction }) => {
-  const [statusEmail, setStatusEmail] = useState('');
+  const [statusEmail, setStatusEmail] = useState({});
   const form = useRef();
 
   const handleSubmit = (evt) => {
@@ -17,6 +17,7 @@ const FormsContact = ({ title, btnAction }) => {
             msg: 'El mensaje se envió correctamente!',
             type: 'success',
           });
+          document.getElementById('reset').reset();
         }
       }, (error) => {
         setStatusEmail({
@@ -29,7 +30,7 @@ const FormsContact = ({ title, btnAction }) => {
 
   return (
     <div className="col-md-6">
-      <form ref={form} className="p-md-5 mt-md-5" onSubmit={ handleSubmit }>
+      <form ref={form} className="p-md-5 mt-md-5" id='reset' onSubmit={ handleSubmit }>
         <h2 className="mb-4 fs-2 display-6">{title}</h2>
         <div className="mb-3">
           <label htmlFor="fullName" className="form-label">Nombre Completo</label>
@@ -58,9 +59,8 @@ const FormsContact = ({ title, btnAction }) => {
         </div>
       </form>
       {
-        statusEmail
-          ? <Alert type={statusEmail.type} msg={statusEmail.msg}/>
-          : <></>
+        statusEmail.type === 'success'
+          && <Alert type={statusEmail.type} msg={statusEmail.msg}/>
       }
     </div>
   );
