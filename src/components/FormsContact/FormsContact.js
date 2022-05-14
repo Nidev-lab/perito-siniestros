@@ -3,14 +3,21 @@ import emailjs from '@emailjs/browser';
 import PropTypes from 'prop-types';
 import Alert from '../Alert/Alert';
 
-const FormsContact = ({ title, btnAction }) => {
+const FormsContact = ({
+  title, btnAction, formTopic,
+}) => {
   const [statusEmail, setStatusEmail] = useState({});
   const form = useRef();
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
 
-    emailjs.sendForm('service_wod3n1o', 'template_8ki752q', form.current, 'Tiz3khlYsRSA7kxEo')
+    emailjs.sendForm(
+      process.env.REACT_APP_SERVICES_EMAILJS,
+      'template_ujxgx3b',
+      form.current,
+      process.env.REACT_APP_PUBLIC_KEY_EMAILJS,
+    )
       .then((result) => {
         if (result.text === 'OK') {
           setStatusEmail({
@@ -31,6 +38,7 @@ const FormsContact = ({ title, btnAction }) => {
   return (
     <div className="col-md-6">
       <form ref={form} className="p-md-5 mt-md-5" id='reset' onSubmit={ handleSubmit }>
+      <input type="text" className="form-control d-none" name='topic' id="fullName" value={ formTopic }/>
         <h2 className="mb-4 fs-2 display-6">{title}</h2>
         <div className="mb-3">
           <label htmlFor="fullName" className="form-label">Nombre Completo</label>
@@ -69,6 +77,7 @@ const FormsContact = ({ title, btnAction }) => {
 FormsContact.propTypes = {
   btnAction: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
+  formTopic: PropTypes.string.isRequired,
 };
 
 export default FormsContact;
