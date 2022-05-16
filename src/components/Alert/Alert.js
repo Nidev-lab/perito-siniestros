@@ -1,12 +1,21 @@
 import React from 'react';
 import './alert.css';
+import PropTypes from 'prop-types';
 
-const Alert = () => {
+const Alert = (props) => {
+  const { msg, type } = props;
+
   return (
-    <div className="alert alert-primary alert-border-radius" role="alert">
-      Example component.
+    <div className={`alert alert-${type} alert-dismissible fade show`} role="alert">
+      {msg}
+      <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
   );
+};
+
+Alert.propTypes = {
+  msg: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
 };
 
 export default Alert;
