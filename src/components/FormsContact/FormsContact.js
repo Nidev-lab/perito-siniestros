@@ -38,7 +38,7 @@ const FormsContact = ({
   return (
     <div className="col-md-6">
       <form ref={form} className="p-md-5 mt-md-5" id='reset' onSubmit={ handleSubmit }>
-      <input type="text" className="form-control d-none" name='topic' id="fullName" value={ formTopic }/>
+      <input type="text" className="form-control d-none" name='topic' id="fullName" defaultValue={ formTopic }/>
         <h2 className="mb-4 fs-2 display-6">{title}</h2>
         <div className="mb-3">
           <label htmlFor="fullName" className="form-label">Nombre Completo</label>

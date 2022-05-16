@@ -1,5 +1,6 @@
 import React from 'react';
 import './alert.css';
+import PropTypes from 'prop-types';
 
 const Alert = (props) => {
   const { msg, type } = props;
@@ -10,6 +11,11 @@ const Alert = (props) => {
       <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
   );
+};
+
+Alert.propTypes = {
+  msg: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
 };
 
 export default Alert;
