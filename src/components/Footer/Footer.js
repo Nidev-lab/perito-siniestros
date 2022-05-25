@@ -16,12 +16,16 @@ const Footer = () => {
         <div className="d-sm-flex justify-content-center flex-column mt-3">
           <span className="text-center fw-bold">Redes Sociales</span>
           <div className="d-sm-flex justify-content-center m-sm-3 text-center box-social-icons">
-            <a href="/#">
+            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/El-Genio-del-siniestro-115072344542198/">
               <i className="bi bi-facebook"></i>
             </a>
-            <a href="/#">
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/geniodelsiniestro">
               <i className="bi bi-instagram"></i>
             </a>
+            <a target="_blank" rel="noreferrer" href="https://www.whatsapp.com">
+              <i className="bi bi-whatsapp"></i>
+            </a>
+            {/* <span>+54 9 381 537 9519</span> */}
           </div>
         </div>
       </div>
