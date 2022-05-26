@@ -157,7 +157,7 @@ const ManageSinister = () => {
           <label className="form-label">Horario de contacto</label>
           <input type="text" className="form-control" value="Lun. a Vie. 9hs-18hs y Sab. 9hs-12hs" disabled />
         </div>
-        <div className="col-12" data-aos="fade-up">
+        <div className="col-12 mb-3" data-aos="fade-up">
           <button className="btn btn-accept" type="submit">Enviar consulta</button>
         </div>
       </form>
@@ -165,6 +165,7 @@ const ManageSinister = () => {
         statusEmail.type === 'success'
           && <Alert type={statusEmail.type} msg={statusEmail.msg}/>
       }
+      <Alert msg="Información importante: cada caso es analizado por un equipo de peritos, en caso de ser necesario un tipo de gestión especial, nos contactaremos para una entrevista." type="danger"/>
     </div>
   );
 };
