@@ -1,9 +1,11 @@
 import { React, useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Alert from '../Alert/Alert';
+import Spinner from '../Spinner/Spinner';
 
 const ManageSinister = () => {
   const [statusEmail, setStatusEmail] = useState({});
+  const [statusSpinner, setStatusSpinner] = useState(false);
   const form = useRef();
 
   const handleSubmit = (evt) => {
@@ -20,6 +22,7 @@ const ManageSinister = () => {
             msg: 'El mensaje se envió correctamente!',
             type: 'success',
           });
+          setStatusSpinner(false);
           document.getElementById('reset').reset();
         }
       }, (error) => {
@@ -28,6 +31,7 @@ const ManageSinister = () => {
           msg: 'Ups...parece que algo salió mal, intenta mas tarde!',
           type: 'danger',
         });
+        setStatusSpinner(false);
       });
   };
 
@@ -158,7 +162,10 @@ const ManageSinister = () => {
           <input type="text" className="form-control" value="Lun. a Vie. 9hs-18hs y Sab. 9hs-12hs" disabled />
         </div>
         <div className="col-12 mb-3" data-aos="fade-up">
-          <button className="btn btn-accept" type="submit">Enviar consulta</button>
+          <button className="me-2 btn btn-accept" type="submit" onClick={ () => setStatusSpinner(true) }>Enviar consulta</button>
+          {
+            statusSpinner && <Spinner />
+          }
         </div>
       </form>
       {
