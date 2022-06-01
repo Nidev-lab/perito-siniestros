@@ -1,17 +1,18 @@
-import { React, useState, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import PropTypes from 'prop-types';
 import Alert from '../Alert/Alert';
+import Spinner from '../Spinner/Spinner';
 
 const FormsContact = ({
   title, btnAction, formTopic,
 }) => {
   const [statusEmail, setStatusEmail] = useState({});
+  const [statusSpinner, setStatusSpinner] = useState(false);
   const form = useRef();
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
-
     emailjs.sendForm(
       process.env.REACT_APP_SERVICES_EMAILJS,
       'template_ujxgx3b',
@@ -24,6 +25,7 @@ const FormsContact = ({
             msg: 'El mensaje se envió correctamente!',
             type: 'success',
           });
+          setStatusSpinner(false);
           document.getElementById('reset').reset();
         }
       }, (error) => {
@@ -32,6 +34,7 @@ const FormsContact = ({
           msg: 'Ups...parece que algo salió mal, intenta mas tarde!',
           type: 'danger',
         });
+        setStatusSpinner(false);
       });
   };
 
@@ -63,7 +66,10 @@ const FormsContact = ({
           <textarea className="form-control" id="consult" name='mensaje' rows="3" placeholder="Ingrese su consulta" required></textarea>
         </div>
         <div className="text-lg-end text-sm-center">
-          <button type="submit" className="btn btn-primary px-4">{btnAction}</button>
+          {
+            statusSpinner && <Spinner />
+          }
+          <button type="submit" className="ms-md-2 px-4 btn btn-primary" onClick={ () => setStatusSpinner(true) }>{btnAction}</button>
         </div>
       </form>
       {
