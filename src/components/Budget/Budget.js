@@ -22,7 +22,7 @@ const Budget = () => {
                 <i className="bi bi-instagram mx-2 fs-5"></i>
                 <span>Instagram</span>
               </a>
-              <a className="text-decoration-none text-dark" href="/#">
+              <a className="text-decoration-none text-dark" target="_blank" rel="noreferrer" href="https://api.whatsapp.com/send?phone=5493815379519">
                 <i className="bi bi-whatsapp mx-2 fs-5"></i>
                 <span>Whatsapp</span>
               </a>
