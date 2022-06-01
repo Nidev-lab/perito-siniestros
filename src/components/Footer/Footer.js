@@ -32,7 +32,7 @@ const Footer = () => {
         <p className="fw-bold">Todos los derechos reservados © 2022 El Genio Del Siniestro</p>
         <p>
           Desarrollado por
-          <a href="www.lagerdevs.com" className="card-link text-decoration-none text-dark fw-bold"> LagerDevs</a>
+          <a className="card-link text-decoration-none text-dark fw-bold" target="_blank" rel="noreferrer" href="https://www.lagerdevs.com"> LagerDevs</a>
         </p>
       </div>
     </footer>

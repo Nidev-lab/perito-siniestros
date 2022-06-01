@@ -58,7 +58,7 @@ const Carousel = () => {
             </div>
             <div className="ms-2 m-1" data-aos="fade-down" data-aos-delay="500">
               <img src={listItem} className="pe-2"/>
-              <span className="fw-normal">Tené a mano <i>carnet de manejo, documentos del vehículo, DNI y Poliza de tu seguro o bien tarjeta de circulacion</i>. Pedí lo mismo al otro conductor.</span>
+              <span className="fw-normal">Tené a mano <i>carnet de manejo, documentos del vehículo, DNI y Poliza de tu seguro o bien tarjeta de circulación</i>. Pedí lo mismo al otro conductor.</span>
             </div>
             <div className="ms-2 m-1" data-aos="fade-down" data-aos-delay="600">
               <img src={listItem} className="pe-2"/>
@@ -66,7 +66,7 @@ const Carousel = () => {
             </div>
             <div className="ms-2 m-1" data-aos="fade-down" data-aos-delay="700">
               <img src={listItem} className="pe-2"/>
-              <span className="fw-normal">Una vez en tu domicilio realiza la denuncia al 0800 de tu compañía, recordá que tenes 48 hs para realizarla.</span>
+              <span className="fw-normal">Una vez en tu domicilio realizá la denuncia al 0800 de tu compañía, recordá que tenés 48 hs para realizarla.</span>
             </div>
         </div>
       </div>

@@ -5,7 +5,7 @@ const Budget = () => {
   return (
     <div className="container d-md-flex" data-aos="zoom-in" data-aos-duration="500">
       <div className="col-md-6 mt-5 d-lg-flex text-center flex-column border-end">
-        <h2 className="m-md-5 card-title fs-1 text-center">MEDIOS DE CONTACTO</h2>
+        <h2 className="m-md-5 card-title fs-1 text-center text-uppercase">MEDIOS DE CONTACTO</h2>
         <div className="d-flex justify-content-center flex-column ms-4">
           <div className="d-lg-flex mt-md-4">
             <p className="ms-lg-5">Correo electrónico:</p>
