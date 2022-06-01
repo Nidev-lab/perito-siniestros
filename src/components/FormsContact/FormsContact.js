@@ -1,17 +1,18 @@
-import { React, useState, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import PropTypes from 'prop-types';
 import Alert from '../Alert/Alert';
+import Spinner from '../Spinner/Spinner';
 
 const FormsContact = ({
   title, btnAction, formTopic,
 }) => {
   const [statusEmail, setStatusEmail] = useState({});
+  const [statusSpinner, setStatusSpinner] = useState(false);
   const form = useRef();
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
-
     emailjs.sendForm(
       process.env.REACT_APP_SERVICES_EMAILJS,
       'template_ujxgx3b',
@@ -24,6 +25,7 @@ const FormsContact = ({
             msg: 'El mensaje se envió correctamente!',
             type: 'success',
           });
+          setStatusSpinner(false);
           document.getElementById('reset').reset();
         }
       }, (error) => {
@@ -32,26 +34,27 @@ const FormsContact = ({
           msg: 'Ups...parece que algo salió mal, intenta mas tarde!',
           type: 'danger',
         });
+        setStatusSpinner(false);
       });
   };
 
   return (
     <div className="col-md-6">
       <form ref={form} className="p-md-5 mt-md-5" id='reset' onSubmit={ handleSubmit }>
-      <input type="text" className="form-control d-none" name='topic' id="fullName" defaultValue={ formTopic }/>
+      <input type="text" className="form-control d-none" name='topic' id="fullName" defaultValue={ formTopic } required/>
         <h2 className="mb-4 fs-2 display-6">{title}</h2>
         <div className="mb-3">
           <label htmlFor="fullName" className="form-label">Nombre Completo</label>
-          <input type="text" className="form-control" name='nombre' id="fullName" placeholder="Ingrese su nombre completo"/>
+          <input type="text" className="form-control" name='nombre' id="fullName" placeholder="Ingrese su nombre completo" required/>
         </div>
         <div className="mb-3">
           <label htmlFor="email" className="form-label">Correo Electrónico</label>
-          <input type="email" className="form-control" name='email' id="email" placeholder="Ingrese su correo electrónico"/>
+          <input type="email" className="form-control" name='email' id="email" placeholder="Ingrese su correo electrónico" required/>
         </div>
         <div className="row justify-content-between">
           <div className="mb-3">
             <label htmlFor="tel" className="form-label">Teléfono</label>
-            <input type="text" className="form-control" id="tel" name='telefono' placeholder="Ingrese su número de teléfono"/>
+            <input type="text" className="form-control" id="tel" name='telefono' placeholder="Ingrese su número de teléfono" required/>
           </div>
           <div className="mb-3">
             <label htmlFor="time" className="form-label">Horario de contacto</label>
@@ -60,10 +63,13 @@ const FormsContact = ({
         </div>
         <div className="mb-3">
           <label htmlFor="consult" className="form-label">Consulta</label>
-          <textarea className="form-control" id="consult" name='mensaje' rows="3" placeholder="Ingrese su consulta"></textarea>
+          <textarea className="form-control" id="consult" name='mensaje' rows="3" placeholder="Ingrese su consulta" required></textarea>
         </div>
         <div className="text-lg-end text-sm-center">
-          <button type="submit" className="btn btn-primary px-4">{btnAction}</button>
+          {
+            statusSpinner && <Spinner />
+          }
+          <button type="submit" className="ms-md-2 px-4 btn btn-primary" onClick={ () => setStatusSpinner(true) }>{btnAction}</button>
         </div>
       </form>
       {
