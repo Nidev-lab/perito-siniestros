@@ -37,13 +37,13 @@ const ManageSinister = () => {
 
   return (
     <div className="container">
-      <h2 className="text-center m-4">Deseo Gestionar un siniestro</h2>
+      <h2 className="text-center m-4 text-uppercase">deseo gestionar mi siniestro</h2>
       <form className="row g-3 needs-validation" ref={form} id="reset" data-aos="zoom-in" data-aos-duration="500" onSubmit={ handleSubmit }>
         <div data-aos="fade-up">
           <h5>Datos del tercero</h5>
         </div>
         <div className="col-md-6" data-aos="fade-up">
-          <label htmlFor="cia-tercero" className="form-label">Compañia de seguro</label>
+          <label htmlFor="cia-tercero" className="form-label">Compañía de seguro</label>
           <input type="text" className="form-control" id="cia-tercero" name="cia-tercero" required />
           <div className="valid-feedback">Completo!</div>
         </div>
@@ -53,7 +53,7 @@ const ManageSinister = () => {
           <div className="valid-feedback">Completo!</div>
         </div>
         <div className="col-md-12" data-aos="fade-up">
-          <label htmlFor="poliza-tercero" className="form-label">Poliza de seguros</label>
+          <label htmlFor="poliza-tercero" className="form-label">Póliza de seguros</label>
           <input type="text" className="form-control" id="poliza-tercero" name="poliza-tercero" required />
           <div className="valid-feedback">Completo!</div>
         </div>
@@ -91,7 +91,7 @@ const ManageSinister = () => {
           <div className="valid-feedback">Completo!</div>
         </div>
         <div className="col-md-4" data-aos="fade-up">
-          <label htmlFor="telefono-tercero" className="form-label">Telefono de contacto</label>
+          <label htmlFor="telefono-tercero" className="form-label">Teléfono de contacto</label>
           <input type="number" className="form-control" id="telefono-tercero" name="telefono-tercero" required />
           <span id="tel" className="form-text">Con código de área sin el 0 ni el 15. Ej: 1131111111</span>
           <div className="valid-feedback">Completo!</div>
@@ -102,7 +102,7 @@ const ManageSinister = () => {
           <div className="valid-feedback">Completo!</div>
         </div>
         <div className="col-md-6" data-aos="fade-up">
-          <label htmlFor="modelo-tercero" className="form-label">Modelo del vehiculo</label>
+          <label htmlFor="modelo-tercero" className="form-label">Modelo del vehículo</label>
           <input type="text" className="form-control" id="modelo-tercero" name="modelo-tercero" required />
           <div className="valid-feedback">Completo!</div>
         </div>
@@ -138,7 +138,7 @@ const ManageSinister = () => {
           <div className="valid-feedback">Completo!</div>
         </div>
         <div className="col-md-6" data-aos="fade-up">
-          <label htmlFor="cia-solicitante" className="form-label">Compañia de seguro</label>
+          <label htmlFor="cia-solicitante" className="form-label">Compañía de seguro</label>
           <input type="text" className="form-control" id="cia-solicitante" name="cia-solicitante" required />
           <div className="valid-feedback">Completo!</div>
         </div>
@@ -148,13 +148,13 @@ const ManageSinister = () => {
           <div className="valid-feedback">Completo!</div>
         </div>
         <div className="col-md-12" data-aos="fade-up">
-          <label htmlFor="poliza-solicitante" className="form-label">Poliza de seguros</label>
+          <label htmlFor="poliza-solicitante" className="form-label">Póliza de seguros</label>
           <input type="text" className="form-control" id="poliza-solicitante" name="poliza-solicitante" required />
           <div className="valid-feedback">Completo!</div>
         </div>
         <hr/>
         <div className="col-md-8" data-aos="fade-up">
-          <label htmlFor="comentario" className="form-label">Cuentanos lo sucedido</label>
+          <label htmlFor="comentario" className="form-label">Cuéntanos lo sucedido</label>
           <textarea className="form-control" id="comentario" name="comentario" rows="3" required></textarea>
         </div>
         <div className="col-md-4" data-aos="fade-up">
@@ -162,7 +162,7 @@ const ManageSinister = () => {
           <input type="text" className="form-control" value="Lun. a Vie. 9hs-18hs y Sab. 9hs-12hs" disabled />
         </div>
         <div className="col-12 mb-3" data-aos="fade-up">
-          <button className="me-2 btn btn-accept" type="submit" onClick={ () => setStatusSpinner(true) }>Enviar consulta</button>
+          <button className="me-2 btn btn-primary" type="submit" onClick={ () => setStatusSpinner(true) }>Enviar consulta</button>
           {
             statusSpinner && <Spinner />
           }

@@ -16,11 +16,14 @@ const Footer = () => {
         <div className="d-sm-flex justify-content-center flex-column mt-3">
           <span className="text-center fw-bold">Redes Sociales</span>
           <div className="d-sm-flex justify-content-center m-sm-3 text-center box-social-icons">
-            <a href="/#">
+            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/El-Genio-del-siniestro-115072344542198/">
               <i className="bi bi-facebook"></i>
             </a>
-            <a href="/#">
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/geniodelsiniestro">
               <i className="bi bi-instagram"></i>
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://api.whatsapp.com/send?phone=5493813650169">
+              <i className="bi bi-whatsapp"></i>
             </a>
           </div>
         </div>
@@ -29,7 +32,7 @@ const Footer = () => {
         <p className="fw-bold">Todos los derechos reservados © 2022 El Genio Del Siniestro</p>
         <p>
           Desarrollado por
-          <a href="www.lagerdevs.com" className="card-link text-decoration-none text-dark fw-bold"> LagerDevs</a>
+          <a className="card-link text-decoration-none text-dark fw-bold" target="_blank" rel="noreferrer" href="https://www.lagerdevs.com"> LagerDevs</a>
         </p>
       </div>
     </footer>
