@@ -22,7 +22,7 @@ const Footer = () => {
             <a target="_blank" rel="noreferrer" href="https://www.instagram.com/geniodelsiniestro">
               <i className="bi bi-instagram"></i>
             </a>
-            <a target="_blank" rel="noreferrer" href="https://api.whatsapp.com/send?phone=5493815379519">
+            <a target="_blank" rel="noreferrer" href="https://api.whatsapp.com/send?phone=5493813650169">
               <i className="bi bi-whatsapp"></i>
             </a>
           </div>
